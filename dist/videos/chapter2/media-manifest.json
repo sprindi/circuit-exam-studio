@@ -1,0 +1,75 @@
+{
+  "videos": [
+    {
+      "id": "transient-intro",
+      "title": "Transient Analysis: Behaviour of Basic Circuit Elements",
+      "creator": "ALL ABOUT ELECTRONICS",
+      "source": "https://www.youtube.com/watch?v=3YinmbkU0DE",
+      "file": "videos/chapter2/transient-intro.mp4",
+      "poster": "videos/chapter2/transient-intro.jpg",
+      "duration_seconds": 906.832109,
+      "bytes": 18793732,
+      "width": 1280,
+      "height": 720,
+      "video_codec": "h264",
+      "sha256": "9c68435d60709f98c010b09c3eb3e56a38c2d5bf976a71be725ebc7e07324e1d"
+    },
+    {
+      "id": "switching",
+      "title": "Transient Analysis: Solved Examples on First order RC and RL Circuits",
+      "creator": "ALL ABOUT ELECTRONICS",
+      "source": "https://www.youtube.com/watch?v=zDcXt9Vx34o",
+      "file": "videos/chapter2/switching.mp4",
+      "poster": "videos/chapter2/switching.jpg",
+      "duration_seconds": 1017.312653,
+      "bytes": 24181600,
+      "width": 1280,
+      "height": 720,
+      "video_codec": "h264",
+      "sha256": "029e53f97cf03dc0cbf25726e4f031aa866de6dc7c7b282a4e230a9387e71663"
+    },
+    {
+      "id": "three-values",
+      "title": "Transient Analysis: First order R C and R L Circuits",
+      "creator": "ALL ABOUT ELECTRONICS",
+      "source": "https://www.youtube.com/watch?v=KylJ2v1_c-o",
+      "file": "videos/chapter2/three-values.mp4",
+      "poster": "videos/chapter2/three-values.jpg",
+      "duration_seconds": 1635.102766,
+      "bytes": 33698329,
+      "width": 1280,
+      "height": 720,
+      "video_codec": "h264",
+      "sha256": "53d05e20a841d0958aad9a6b635ddf845c0b57da880de24b04e117464f0ce906"
+    },
+    {
+      "id": "rc-response",
+      "title": "RC Circuits Physics Problems, Time Constant Explained, Capacitor Charging and Discharging",
+      "creator": "The Organic Chemistry Tutor",
+      "source": "https://www.youtube.com/watch?v=PLQrPqYlPmI",
+      "file": "videos/chapter2/rc-response.mp4",
+      "poster": "videos/chapter2/rc-response.jpg",
+      "duration_seconds": 1051.538866,
+      "bytes": 21710128,
+      "width": 1280,
+      "height": 720,
+      "video_codec": "h264",
+      "sha256": "83cc339b4c66c04b2a6012d933041a82932a416438dc67a921fc606fd220cfb6"
+    },
+    {
+      "id": "rl-response",
+      "title": "RL Circuits - Inductors & Resistors",
+      "creator": "The Organic Chemistry Tutor",
+      "source": "https://www.youtube.com/watch?v=RR0sQeDAxgk",
+      "file": "videos/chapter2/rl-response.mp4",
+      "poster": "videos/chapter2/rl-response.jpg",
+      "duration_seconds": 1345.735692,
+      "bytes": 34039153,
+      "width": 1280,
+      "height": 720,
+      "video_codec": "h264",
+      "sha256": "660e7d9bfde23c36d455856d2ff9292dcc3cd3f7cc8dcd3c70b30ad8669b3456"
+    }
+  ],
+  "total_bytes": 132422942
+}

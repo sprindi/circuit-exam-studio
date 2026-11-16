@@ -1,0 +1,346 @@
+{
+  "videos": {
+    "basics": {
+      "title": "Electric Current & Circuits Explained",
+      "channel": "The Organic Chemistry Tutor",
+      "url": "https://www.youtube.com/watch?v=r-SCyD7f_zI",
+      "focus": "Connect charge, current, voltage, power and energy. Follow the units in one worked calculation.",
+      "note": "Watch the explanation and one relevant example, then return to the teacher’s problem.",
+      "local": "videos/chapter1/basics.mp4",
+      "duration": 1089,
+      "poster": "videos/chapter1/basics.jpg"
+    },
+    "emf": {
+      "title": "Cells, EMF, terminal voltage & internal resistance",
+      "channel": "Khan Academy",
+      "url": "https://www.khanacademy.org/science/up-class-12-physics/x0958a876c1afdc76:electric-current/x0958a876c1afdc76:c/v/cells-emf-terminal-voltage-internal-resistance",
+      "focus": "Understand energy supplied per coulomb, internal heating, and why output voltage can differ from EMF.",
+      "note": "Relate the video’s symbols to the course: Us or E is EMF; R₀ is internal resistance. Then try the 125 V / 115 V / 4 A example.",
+      "local": "videos/chapter1/emf.mp4",
+      "duration": 870,
+      "poster": "videos/chapter1/emf.jpg"
+    },
+    "signs": {
+      "title": "Sign convention for passive components",
+      "channel": "Khan Academy",
+      "url": "https://www.youtube.com/watch?v=1Oopq5U0b08",
+      "focus": "Choose voltage polarity and current arrows consistently, and interpret a negative result.",
+      "note": "Keep the physical node names fixed. Use the lesson’s figures for moving the zero reference.",
+      "local": "videos/chapter1/signs.mp4",
+      "duration": 269,
+      "poster": "videos/chapter1/signs.jpg"
+    },
+    "sources": {
+      "title": "Ideal sources",
+      "channel": "Khan Academy",
+      "url": "https://www.khanacademy.org/science/electrical-engineering/ee-circuit-analysis-topic/circuit-elements/v/ee-ideal-sources",
+      "focus": "See what each source fixes: voltage for a voltage source, current for a current source.",
+      "note": "The connected circuit determines the other quantity. Use the teacher’s examples to check supplied versus absorbed power.",
+      "local": "videos/chapter1/sources.mp4",
+      "duration": 174,
+      "poster": "videos/chapter1/sources.jpg"
+    },
+    "capacitor": {
+      "title": "Capacitor i–v equations",
+      "channel": "Khan Academy",
+      "url": "https://www.khanacademy.org/science/electrical-engineering/ee-circuit-analysis-topic/ee-natural-and-forced-response/v/ee-capacitor-i-v-equations",
+      "focus": "Focus on i = C du/dt: capacitor current depends on how fast its voltage changes.",
+      "note": "For Chapter 1, concentrate on the derivative relation, units and marked references. The integral treatment can wait.",
+      "local": "videos/chapter1/capacitor.mp4",
+      "duration": 521,
+      "poster": "videos/chapter1/capacitor.jpg"
+    },
+    "inductor": {
+      "title": "Inductor equations",
+      "channel": "Khan Academy",
+      "url": "https://www.khanacademy.org/science/electrical-engineering/ee-circuit-analysis-topic/ee-natural-and-forced-response/v/ee-inductor-equations",
+      "focus": "Focus on u = L di/dt: inductor voltage depends on how fast its current changes.",
+      "note": "For Chapter 1, concentrate on the derivative relation, units and marked references. The integral treatment can wait.",
+      "local": "videos/chapter1/inductor.mp4",
+      "duration": 767,
+      "poster": "videos/chapter1/inductor.jpg"
+    },
+    "transformation": {
+      "title": "Source transformation in network analysis",
+      "channel": "ALL ABOUT ELECTRONICS",
+      "url": "https://www.youtube.com/watch?v=FtEU5ZoO-fg",
+      "focus": "Convert a voltage source with series resistance into a current source with parallel resistance, and back.",
+      "note": "Keep the same external terminals, resistance and source direction. Return to the teacher’s 5 V / 2 mA network after one example.",
+      "local": "videos/chapter1/transformation.mp4",
+      "duration": 826,
+      "poster": "videos/chapter1/transformation.jpg"
+    },
+    "topology": {
+      "title": "Loop, Mesh, Node and Branch",
+      "channel": "ALL ABOUT ELECTRONICS",
+      "url": "https://www.youtube.com/watch?v=zUGaU4kZpag",
+      "focus": "Recognise junctions, branches, closed paths and meshes before writing equations.",
+      "note": "Your teacher counts essential nodes where three or more elements meet and paths between them as branches. Some videos also count ordinary two-element junctions.",
+      "local": "videos/chapter1/topology.mp4",
+      "duration": 274,
+      "poster": "videos/chapter1/topology.jpg"
+    },
+    "kirchhoff": {
+      "title": "Kirchhoff’s Laws and Circuit Analysis",
+      "channel": "The Organic Chemistry Tutor",
+      "url": "https://www.youtube.com/watch?v=2Zu3ppq3n8I",
+      "focus": "Write current balance at nodes and signed voltage balance around loops, then solve for branch currents.",
+      "note": "Watch the setup and one complete example. Then write the teacher’s five equations for five branch currents, using the assigned arrows.",
+      "local": "videos/chapter1/kirchhoff.mp4",
+      "duration": 4654,
+      "poster": "videos/chapter1/kirchhoff.jpg"
+    },
+    "superposition": {
+      "title": "Superposition Theorem",
+      "channel": "The Organic Chemistry Tutor",
+      "url": "https://www.youtube.com/watch?v=EX52BuZxpQM",
+      "focus": "Consider independent sources separately and add their signed current or voltage contributions.",
+      "note": "Inactive ideal voltage sources become shorts; inactive ideal current sources become opens. Keep resistances. Do not add the separate powers.",
+      "local": "videos/chapter1/superposition.mp4",
+      "duration": 2658,
+      "poster": "videos/chapter1/superposition.jpg"
+    },
+    "thevenin": {
+      "title": "Thévenin’s Theorem Explained",
+      "channel": "ALL ABOUT ELECTRONICS",
+      "url": "https://www.youtube.com/watch?v=8udwPc5pCoA",
+      "focus": "Remove the load, find the open-circuit voltage and resistance seen at its port, then reconnect the load.",
+      "note": "Focus on the principle and independent-source example. Dependent-source examples go beyond the current chapter’s worked problems. Then try the teacher’s 8 Ω bridge load.",
+      "local": "videos/chapter1/thevenin.mp4",
+      "duration": 996,
+      "poster": "videos/chapter1/thevenin.jpg"
+    },
+    "norton": {
+      "title": "Norton’s Theorem Explained",
+      "channel": "ALL ABOUT ELECTRONICS",
+      "url": "https://www.youtube.com/watch?v=DdLA8rntWEY",
+      "focus": "Find the short-circuit current and parallel equivalent resistance at the same load port.",
+      "note": "Focus on independent sources. Compare with the Thévenin result: the teacher’s reconnected 8 Ω load must still carry 1 A.",
+      "local": "videos/chapter1/norton.mp4",
+      "duration": 920,
+      "poster": "videos/chapter1/norton.jpg"
+    },
+    "introduction": {
+      "title": "Schematic Diagrams & Symbols",
+      "channel": "The Organic Chemistry Tutor",
+      "url": "https://www.youtube.com/watch?v=Dl1gFBNa0Ik",
+      "focus": "Recognise the battery, switch, wires and load in a circuit diagram.",
+      "note": "Use the sheet below for your teacher’s power-versus-signal and source/link/load classifications.",
+      "local": "videos/chapter1/introduction.mp4",
+      "poster": "videos/chapter1/introduction.jpg",
+      "duration": 1079
+    },
+    "conditions": {
+      "title": "Open, Closed, and Short Circuits",
+      "channel": "The Organic Chemistry Tutor",
+      "url": "https://www.youtube.com/watch?v=v5RJf_V0LYA",
+      "focus": "Distinguish a conducting load path, a broken path and a direct short.",
+      "note": "This is the dedicated lesson 1.3 video. The source-loss and 125 V example are summarised below.",
+      "local": "videos/chapter1/conditions.mp4",
+      "poster": "videos/chapter1/conditions.jpg",
+      "duration": 323
+    },
+    "branch-analysis": {
+      "title": "Branch Current Method Explained",
+      "channel": "Faraday Jr",
+      "url": "https://www.youtube.com/watch?v=UEq4MXoZmTE",
+      "focus": "Assign branch currents and use KCL and KVL to form simultaneous equations.",
+      "note": "Then apply the same setup to your teacher’s five-branch symbolic example; a negative solution reverses the assumed current direction.",
+      "local": "videos/chapter1/branch-analysis.mp4",
+      "poster": "videos/chapter1/branch-analysis.jpg",
+      "duration": 351
+    },
+    "transient-intro": {
+      "title": "Transient Analysis: Behaviour of Basic Circuit Elements",
+      "channel": "ALL ABOUT ELECTRONICS",
+      "url": "https://www.youtube.com/watch?v=3YinmbkU0DE",
+      "focus": "See why a switching event makes R, L and C respond differently.",
+      "note": "The video explains switching and element behavior. The sheet adds your teacher’s lamp demonstration and applications; its microsecond/millisecond examples are not a universal duration limit.",
+      "local": "videos/chapter2/transient-intro.mp4",
+      "poster": "videos/chapter2/transient-intro.jpg",
+      "duration": 907
+    },
+    "switching": {
+      "title": "Transient Analysis: Solved Examples on First order RC and RL Circuits",
+      "channel": "ALL ABOUT ELECTRONICS",
+      "url": "https://www.youtube.com/watch?v=zDcXt9Vx34o",
+      "focus": "Use capacitor-voltage and inductor-current continuity in worked switching examples.",
+      "note": "The video revises continuity and solves RC/RL examples. It also previews time constants from 2.3. The examples below use your teacher’s own circuits.",
+      "local": "videos/chapter2/switching.mp4",
+      "poster": "videos/chapter2/switching.jpg",
+      "duration": 1017
+    },
+    "three-values": {
+      "title": "Transient Analysis: First order R C and R L Circuits",
+      "channel": "ALL ABOUT ELECTRONICS",
+      "url": "https://www.youtube.com/watch?v=KylJ2v1_c-o",
+      "focus": "Derive the exponential and find initial value, final value and time constant.",
+      "note": "The video derives RC/RL responses and the final + (initial − final) shortcut. The sheet keeps the additional initial-value circuits, final-value examples and unit corrections taught in your course.",
+      "local": "videos/chapter2/three-values.mp4",
+      "poster": "videos/chapter2/three-values.jpg",
+      "duration": 1635
+    },
+    "rc-response": {
+      "title": "RC Circuits Physics Problems, Time Constant Explained, Capacitor Charging and Discharging",
+      "channel": "The Organic Chemistry Tutor",
+      "url": "https://www.youtube.com/watch?v=PLQrPqYlPmI",
+      "focus": "Follow charging, discharging and a time-to-target calculation.",
+      "note": "The video explains RC charging, discharging, τ and a threshold calculation. The sheet adds the teacher’s source-to-source complete response and the passive-reference current sign.",
+      "local": "videos/chapter2/rc-response.mp4",
+      "poster": "videos/chapter2/rc-response.jpg",
+      "duration": 1052
+    },
+    "rl-response": {
+      "title": "RL Circuits - Inductors & Resistors",
+      "channel": "The Organic Chemistry Tutor",
+      "url": "https://www.youtube.com/watch?v=RR0sQeDAxgk",
+      "focus": "Calculate RL current buildup, decay and time constants; keep the voltage reference explicit.",
+      "note": "The video covers RL buildup, decay and time constants. It sometimes describes induced EMF or loop traversal drops as negative. Your course’s passive terminal voltage is uL = +L diL/dt; induced EMF is eL = −L diL/dt. Use the marked reference, not the word “voltage” alone.",
+      "local": "videos/chapter2/rl-response.mp4",
+      "poster": "videos/chapter2/rl-response.jpg",
+      "duration": 1346
+    },
+    "ac-waveforms": {
+      "title": "Alternating Current vs Direct Current - Rms Voltage, Peak Current & Average Power of AC Circuits",
+      "channel": "The Organic Chemistry Tutor",
+      "url": "https://www.youtube.com/watch?v=ERIToctYUcQ",
+      "focus": "Compare AC and DC and calculate peak and RMS values for sinusoids.",
+      "note": "The video covers AC/DC and sine-wave RMS calculations. Its power examples assume sinusoidal in-phase voltage/current; for a general load, use P = UI cosφ in 3.6. The sheet adds your teacher’s frequency and phase material.",
+      "local": "videos/chapter3/ac-waveforms.mp4",
+      "poster": "videos/chapter3/ac-waveforms.jpg",
+      "duration": 690
+    },
+    "phasors": {
+      "title": "Phasor and The Phasor Diagram in AC Circuits Explained",
+      "channel": "ALL ABOUT ELECTRONICS",
+      "url": "https://www.youtube.com/watch?v=zlmwmvijn1Y",
+      "focus": "Connect a rotating vector to a sinusoid and represent magnitude and phase mathematically.",
+      "note": "The video teaches rotating vectors, mathematical forms and R/L/C phase relationships. It mainly uses peak phasors. Your course calculations below use RMS phasors; the phase angles are unchanged. The sheet also includes the course’s complex-number arithmetic.",
+      "local": "videos/chapter3/phasors.mp4",
+      "poster": "videos/chapter3/phasors.jpg",
+      "duration": 808
+    },
+    "impedance": {
+      "title": "Impedance",
+      "channel": "Khan Academy",
+      "url": "https://www.youtube.com/watch?v=WmTlioVfS78",
+      "focus": "Derive the impedance of R, L and C from their voltage–current laws.",
+      "note": "Khan Academy derives each impedance from its element law using complex exponentials. Its cosine/exponential derivation gives the same impedance laws as your course’s sine reference. The sheet states the phase relationships and corrects the capacitor slide labels.",
+      "local": "videos/chapter3/impedance.mp4",
+      "poster": "videos/chapter3/impedance.jpg",
+      "duration": 700
+    },
+    "series-rlc": {
+      "title": "Series RLC Circuits, Resonant Frequency, Inductive Reactance & Capacitive Reactance - AC Circuits",
+      "channel": "The Organic Chemistry Tutor",
+      "url": "https://www.youtube.com/watch?v=2GvqQvohP2k",
+      "focus": "Calculate reactances, total impedance magnitude and element voltages in a series circuit.",
+      "note": "The video calculates a series RLC example, reactances, current and element voltage magnitudes. It calls |Z| “impedance”; your course also requires complex Z and the impedance divider, shown below. Its final resonant-frequency calculation is extra to the reviewed lesson.",
+      "local": "videos/chapter3/series-rlc.mp4",
+      "poster": "videos/chapter3/series-rlc.jpg",
+      "duration": 644
+    },
+    "parallel-rlc": {
+      "title": "Parallel RLC Circuit Example Problem",
+      "channel": "The Organic Chemistry Tutor",
+      "url": "https://www.youtube.com/watch?v=8MMzeeHNjIw",
+      "focus": "Calculate parallel branch currents and verify their vector sum.",
+      "note": "The video works a pure parallel RLC example and checks the vector current sum. The sheet adds your teacher’s general complex branches and current-divider examples. The final resonance calculation is optional beyond the reviewed lesson.",
+      "local": "videos/chapter3/parallel-rlc.mp4",
+      "poster": "videos/chapter3/parallel-rlc.jpg",
+      "duration": 638
+    },
+    "average-power": {
+      "title": "Average Power in AC Circuits",
+      "channel": "Neso Academy",
+      "url": "https://www.youtube.com/watch?v=vwtzsdve0XI",
+      "focus": "Average instantaneous power over a cycle and distinguish resistive and reactive behavior.",
+      "note": "The first video revisits instantaneous power and derives average power; the second introduces apparent power and power factor. The sheet adds your teacher’s signed reactive power, pure-element cases and addition rules. Capacitor sizing is not part of this reviewed lesson. The videos use peak phasors for some derivations and cosine waveforms; use the RMS factors and consistent sine reference stated below.",
+      "local": "videos/chapter3/average-power.mp4",
+      "poster": "videos/chapter3/average-power.jpg",
+      "duration": 661
+    },
+    "power-triangle": {
+      "title": "Apparent Power & Power Factor",
+      "channel": "Neso Academy",
+      "url": "https://www.youtube.com/watch?v=_ebsZf9RpT8",
+      "focus": "Relate RMS apparent power to real power and leading or lagging power factor.",
+      "note": "The first video revisits instantaneous power and derives average power; the second introduces apparent power and power factor. The sheet adds your teacher’s signed reactive power, pure-element cases and addition rules. Capacitor sizing is not part of this reviewed lesson. The videos use peak phasors for some derivations and cosine waveforms; use the RMS factors and consistent sine reference stated below.",
+      "local": "videos/chapter3/power-triangle.mp4",
+      "poster": "videos/chapter3/power-triangle.jpg",
+      "duration": 417
+    }
+  },
+  "topics": {
+    "1.1": [
+      "introduction"
+    ],
+    "1.2": [
+      "basics",
+      "emf"
+    ],
+    "1.3": [
+      "conditions"
+    ],
+    "1.4": [
+      "signs"
+    ],
+    "1.5": [
+      "sources",
+      "capacitor",
+      "inductor"
+    ],
+    "1.6": [
+      "transformation"
+    ],
+    "1.7": [
+      "topology",
+      "kirchhoff"
+    ],
+    "1.8": [
+      "branch-analysis"
+    ],
+    "1.9": [
+      "superposition"
+    ],
+    "1.10": [
+      "thevenin",
+      "norton"
+    ],
+    "2.1": [
+      "transient-intro"
+    ],
+    "2.2": [
+      "switching"
+    ],
+    "2.3": [
+      "three-values"
+    ],
+    "2.4": [
+      "rc-response"
+    ],
+    "2.5": [
+      "rl-response"
+    ],
+    "3.1": [
+      "ac-waveforms"
+    ],
+    "3.2": [
+      "phasors"
+    ],
+    "3.3": [
+      "impedance"
+    ],
+    "3.4": [
+      "series-rlc"
+    ],
+    "3.5": [
+      "parallel-rlc"
+    ],
+    "3.6": [
+      "average-power",
+      "power-triangle"
+    ]
+  },
+  "scenes": {}
+}

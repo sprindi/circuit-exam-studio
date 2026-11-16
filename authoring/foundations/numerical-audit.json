@@ -1,0 +1,41 @@
+{
+  "RC 90% target time (s)": 1.1512925464970227,
+  "RL i(0.5 s) (A)": 0.7357588823428847,
+  "RL u(0.5 s) (V)": -1.4715177646857693,
+  "phasor current sum (A)": {
+    "rectangular": "(16.49852262806237-3.176279441628826j)",
+    "magnitude": 16.801488029338355,
+    "angle_degrees": -10.897203076757982
+  },
+  "series current (A)": {
+    "rectangular": "(1-1j)",
+    "magnitude": 1.4142135623730951,
+    "angle_degrees": -45.0
+  },
+  "series section1 (V)": {
+    "rectangular": "(5-1j)",
+    "magnitude": 5.0990195135927845,
+    "angle_degrees": -11.309932474020213
+  },
+  "series section2 (V)": {
+    "rectangular": "(5+1j)",
+    "magnitude": 5.0990195135927845,
+    "angle_degrees": 11.309932474020213
+  },
+  "parallel E1 equivalent (ohm)": {
+    "rectangular": "(1.2+1.2j)",
+    "magnitude": 1.697056274847714,
+    "angle_degrees": 45.0
+  },
+  "parallel E2 current (A)": {
+    "rectangular": "(0.6637071222983699+0.5563410051162523j)",
+    "magnitude": 0.866038369914027,
+    "angle_degrees": 39.9708387165167
+  },
+  "parallel E2 impedance (ohm)": {
+    "rectangular": "(194.6815929528354-163.18847494953204j)",
+    "magnitude": 254.03031510236633,
+    "angle_degrees": -39.9708387165167
+  },
+  "power triangle apparent (VA)": 500.0
+}

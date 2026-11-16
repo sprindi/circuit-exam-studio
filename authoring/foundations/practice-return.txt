@@ -1,0 +1,1 @@
+/* C1_PRACTICE_RETURN_START */const c1Practice=location.hash.match(/^#practice\/topic\/(1\.(?:10|[1-9]))$/);if(c1Practice&&!main.querySelector('#c1-return-lesson'))main.insertAdjacentHTML('afterbegin',`<a class="backlink" id="c1-return-lesson" href="#topic/${c1Practice[1]}">← Lesson ${c1Practice[1]} · video & cheat sheet</a>`);/* C1_PRACTICE_RETURN_END */

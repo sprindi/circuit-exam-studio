@@ -1,0 +1,2087 @@
+{
+  "1.1": {
+    "title": "Recognize the circuit",
+    "goal": "Identify the purpose, the parts, and the ideal model.",
+    "cases": [
+      {
+        "id": "case-1",
+        "name": "Source, link, load",
+        "rule": "Identify each part by what it does.",
+        "when": "When naming the parts of a physical circuit.",
+        "figure": "lamp",
+        "given": "A battery, switch, wires and lamp.",
+        "steps": [
+          {
+            "label": "Find the source",
+            "equation": "Battery → source",
+            "why": "The battery supplies electrical energy.",
+            "audio": "audio/c1-216bacf9c6f97f.mp3"
+          },
+          {
+            "label": "Follow the connection",
+            "equation": "Switch + wires → intermediate link",
+            "why": "The switch and conductors connect the source to the load.",
+            "audio": "audio/c1-a7f2baf6eedb51.mp3"
+          },
+          {
+            "label": "Find the useful output",
+            "equation": "Lamp → load",
+            "why": "The lamp converts electrical energy into light and heat.",
+            "audio": "audio/c1-a065800fdaa92a.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "Source",
+            "supplies electrical energy, such as the battery"
+          ],
+          [
+            "Link",
+            "wires and switch that connect the source to the load"
+          ],
+          [
+            "Load",
+            "uses electrical energy, such as the lamp"
+          ]
+        ]
+      },
+      {
+        "id": "case-2",
+        "name": "Power or signal?",
+        "rule": "Classify by the circuit’s main purpose.",
+        "when": "When the question asks for the circuit type.",
+        "figure": "blocks",
+        "given": "Compare a torch with a microphone–amplifier–speaker system.",
+        "steps": [
+          {
+            "label": "Power circuit",
+            "equation": "Battery → lamp → light",
+            "why": "The main purpose is to deliver and convert energy.",
+            "audio": "audio/c1-e31bc660c01830.mp3"
+          },
+          {
+            "label": "Signal circuit",
+            "equation": "Microphone → amplifier → speaker",
+            "why": "The main purpose is to transmit or process information.",
+            "audio": "audio/c1-9d2abe95edb189.mp3"
+          },
+          {
+            "label": "Check the purpose",
+            "equation": "Energy delivery ≠ information processing",
+            "why": "Both kinds use energy; energy consumption alone does not identify the type.",
+            "audio": "audio/c1-51947010994e85.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "Power circuit",
+            "main purpose: deliver and convert energy"
+          ],
+          [
+            "Signal circuit",
+            "main purpose: transmit or process information"
+          ]
+        ]
+      },
+      {
+        "id": "case-3",
+        "name": "Physical or ideal?",
+        "rule": "A circuit model replaces real parts with ideal elements.",
+        "when": "When moving from a physical device to a schematic.",
+        "figure": "lamp",
+        "given": "Model the battery, lamp and switch.",
+        "steps": [
+          {
+            "label": "Replace the real parts",
+            "equation": "Battery → ideal source; lamp → load",
+            "why": "The model keeps the electrical relationships needed for the problem.",
+            "audio": "audio/c1-fca2c7085eb787.mp3"
+          },
+          {
+            "label": "Check the connection",
+            "equation": "Closed switch → complete path",
+            "why": "An open switch interrupts the path; a closed switch completes it.",
+            "audio": "audio/c1-2809861ea2bb19.mp3"
+          },
+          {
+            "label": "Recognize the network",
+            "equation": "Two terminals; active or passive",
+            "why": "In this course’s introductory classification, an active network contains a source; a passive one contains no source.",
+            "audio": "audio/c1-ecf7e3e499d7a0.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "Ideal element",
+            "a simplified model with an exact electrical relationship"
+          ],
+          [
+            "Active network",
+            "contains a source in this course’s classification"
+          ],
+          [
+            "Passive network",
+            "contains no source in this course’s classification"
+          ]
+        ]
+      },
+      {
+        "id": "case-4",
+        "name": "More load",
+        "rule": "At fixed supply voltage, more consumed power requires more current.",
+        "when": "When the course says “load increases.”",
+        "figure": "load-change",
+        "given": "A 10 V source feeds one 2 Ω resistor, then two in parallel.",
+        "steps": [
+          {
+            "label": "One load",
+            "equation": "I = 10 / 2 = 5 A",
+            "why": "The first resistor takes five amperes.",
+            "audio": "audio/c1-6b4c581a6ea209.mp3"
+          },
+          {
+            "label": "Add another parallel load",
+            "equation": "I = 5 + 5 = 10 A",
+            "why": "The voltage stays ten volts while total current increases.",
+            "audio": "audio/c1-bec4ffc76016d3.mp3"
+          },
+          {
+            "label": "Interpret “more load”",
+            "equation": "P = UI: 50 W → 100 W",
+            "why": "More load does not generally mean more equivalent resistance.",
+            "audio": "audio/c1-fd35fb4c3e0dd5.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "P",
+            "power: energy transferred each second, measured in watts (W)"
+          ],
+          [
+            "I",
+            "current: charge flowing each second, measured in amperes (A)"
+          ],
+          [
+            "U",
+            "voltage / potential difference, measured in volts (V)"
+          ],
+          [
+            "R",
+            "resistance, measured in ohms (Ω)"
+          ],
+          [
+            "∥",
+            "parallel connection: both elements connect across the same two nodes"
+          ]
+        ]
+      }
+    ]
+  },
+  "1.2": {
+    "title": "Use the right quantity",
+    "goal": "Keep voltage, current, power, energy and their units separate.",
+    "cases": [
+      {
+        "id": "case-1",
+        "name": "Power",
+        "rule": "P = UI for the DC load in this example.",
+        "when": "When asked for the rate of energy use.",
+        "figure": "power",
+        "given": "A bulb takes 1.6 A at 6 V.",
+        "steps": [
+          {
+            "label": "Read the two quantities",
+            "equation": "U = 6 V; I = 1.6 A",
+            "why": "Use voltage and current, not the duration.",
+            "audio": "audio/c1-935b83551394cd.mp3"
+          },
+          {
+            "label": "Multiply",
+            "equation": "P = 6 × 1.6",
+            "why": "Volts times amperes gives watts.",
+            "audio": "audio/c1-ec45aaae94ec93.mp3"
+          },
+          {
+            "label": "State the answer",
+            "equation": "P = 9.6 W",
+            "why": "Power describes how fast energy is transferred.",
+            "audio": "audio/c1-7fb54b73e69773.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "P",
+            "power: energy transferred each second, measured in watts (W)"
+          ],
+          [
+            "U",
+            "voltage across the bulb, in volts (V)"
+          ],
+          [
+            "I",
+            "current: charge flowing each second, measured in amperes (A)"
+          ]
+        ]
+      },
+      {
+        "id": "case-2",
+        "name": "Energy",
+        "rule": "W = Pt when power is constant.",
+        "when": "When asked how much energy is used over a duration.",
+        "figure": "energy",
+        "given": "A bulb takes 10 mA at 2 V for 30 minutes.",
+        "steps": [
+          {
+            "label": "Convert the units",
+            "equation": "I = 0.010 A; t = 1800 s",
+            "why": "Convert milliamperes and minutes before substituting.",
+            "audio": "audio/c1-e482365d429918.mp3"
+          },
+          {
+            "label": "Find constant power",
+            "equation": "P = 2 × 0.010 = 0.020 W",
+            "why": "The source supplies twenty milliwatts to the load.",
+            "audio": "audio/c1-bd6d16d94a46bf.mp3"
+          },
+          {
+            "label": "Include the time",
+            "equation": "W = 0.020 × 1800 = 36 J",
+            "why": "Energy depends on duration. One kilowatt-hour equals 3.6 million joules.",
+            "audio": "audio/c1-b8c1190764af99.mp3"
+          }
+        ],
+        "trap": "kW measures power; kWh measures energy.",
+        "symbols": [
+          [
+            "W",
+            "energy transferred, measured in joules (J); here W is a quantity, not the watt unit"
+          ],
+          [
+            "P",
+            "power: energy transferred each second, measured in watts (W)"
+          ],
+          [
+            "t",
+            "elapsed time, measured in seconds (s)"
+          ],
+          [
+            "mA",
+            "milliampere: 1 mA = 0.001 A"
+          ]
+        ]
+      },
+      {
+        "id": "case-3",
+        "name": "Node potential",
+        "rule": "Uₐᵦ = Vₐ − Vᵦ.",
+        "when": "When voltage is given through node potentials.",
+        "figure": "ground-two",
+        "given": "10 V across two equal 2 Ω resistors.",
+        "steps": [
+          {
+            "label": "Set the reference",
+            "equation": "V꜀ = 0; Vₐ = 10 V; Vᵦ = 5 V",
+            "why": "A node potential needs a chosen zero.",
+            "audio": "audio/c1-d9c99e4010cca0.mp3"
+          },
+          {
+            "label": "Subtract the potentials",
+            "equation": "Uₐᵦ = 10 − 5 = 5 V",
+            "why": "Voltage is the difference between two node potentials.",
+            "audio": "audio/c1-af5dde9d26c4c4.mp3"
+          },
+          {
+            "label": "Move the reference",
+            "equation": "Vₐ = 0; Vᵦ = −5 V; V꜀ = −10 V",
+            "why": "The node numbers shift, but each resistor still has a five volt drop.",
+            "audio": "audio/c1-cdd0435d062a90.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "Uₐᵦ",
+            "voltage of a relative to b: Uₐᵦ = Vₐ − Vᵦ, in volts (V)"
+          ],
+          [
+            "Vₐ",
+            "potential of point a relative to the chosen ground, in volts (V)"
+          ],
+          [
+            "Vᵦ",
+            "potential of point b relative to the same ground, in volts (V)"
+          ],
+          [
+            "Ground",
+            "chosen reference point assigned 0 V"
+          ]
+        ]
+      },
+      {
+        "id": "case-4",
+        "name": "Current",
+        "rule": "Current is how much charge crosses a point each second.",
+        "when": "For steady flow, use I = Q / t.",
+        "figure": "charge",
+        "given": "A total of 6 C crosses the marked section of a wire in 3 s.",
+        "steps": [
+          {
+            "label": "Count charge through one section",
+            "equation": "Q = 6 C",
+            "why": "Imagine a counting line across the wire. Count the charge that crosses it, not the charge sitting in the wire. C means coulomb, the unit of charge.",
+            "audio": "audio/c1-866b90f283a2ca.mp3"
+          },
+          {
+            "label": "Measure the time",
+            "equation": "I = Q / t = 6 / 3",
+            "why": "Those six coulombs cross in three seconds. Divide the total charge by the time to find the charge passing each second.",
+            "audio": "audio/c1-5dc08e8937ed3a.mp3"
+          },
+          {
+            "label": "Read the meaning of amperes",
+            "equation": "I = 2 C/s = 2 A",
+            "why": "Two amperes means two coulombs cross that section every second. The arrow shows conventional positive-charge flow; electrons in a metal drift the other way.",
+            "audio": "audio/c1-e07a4630402f6d.mp3"
+          }
+        ],
+        "trap": "Current is a flow rate, not the speed of an individual electron. If the flow varies, Q / t gives average current; instantaneous current is i = dq/dt.",
+        "symbols": [
+          [
+            "I",
+            "current: charge flowing each second, measured in amperes (A)"
+          ],
+          [
+            "Q",
+            "charge crossing the chosen section, measured in coulombs (C)"
+          ],
+          [
+            "t",
+            "elapsed time, measured in seconds (s)"
+          ],
+          [
+            "i = dq/dt",
+            "instantaneous current: the rate at which charge crosses the section"
+          ]
+        ]
+      },
+      {
+        "id": "case-5",
+        "name": "EMF or terminal voltage?",
+        "rule": "While the battery supplies current: U = E − IR₀.",
+        "when": "Current leaves the positive terminal; E is the source EMF (also written Uₛ).",
+        "figure": "emf-terminal",
+        "given": "A real battery has E = 12 V and R₀ = 2 Ω, connected to a 4 Ω load.",
+        "steps": [
+          {
+            "label": "What EMF means",
+            "equation": "E = 12 V → 12 J supplied per coulomb",
+            "why": "EMF means electromotive force, but it is not a mechanical force. It is the energy the source supplies per coulomb. Here the battery converts chemical energy into twelve joules of electrical energy for each coulomb.",
+            "audio": "audio/c1-9ec750904baba1.mp3"
+          },
+          {
+            "label": "Why the output is lower",
+            "equation": "I = 12 / (2 + 4) = 2 A; IR₀ = 4 V",
+            "why": "A real battery also has internal resistance. At two amperes, its two ohms causes a four volt internal drop: four joules per coulomb becomes heat inside the battery.",
+            "audio": "audio/c1-88896367ab4969.mp3"
+          },
+          {
+            "label": "What terminal voltage means",
+            "equation": "U = 12 − 4 = 8 V; no current → U = E = 12 V",
+            "why": "Terminal voltage is the potential difference measured across the battery output terminals a and b. Here it is eight volts, so the external load receives eight joules per coulomb. With the load disconnected, current and the internal drop are zero in this model.",
+            "audio": "audio/c1-09c8f64ef76c7d.mp3"
+          }
+        ],
+        "trap": "For this supplying battery: 12 J/C supplied = 4 J/C dissipated inside + 8 J/C delivered outside. During charging the current reverses, so the terminal voltage can exceed the EMF.",
+        "symbols": [
+          [
+            "Uₛ (Us, E)",
+            "source EMF: energy supplied per coulomb, in volts (V); also written E or Uₛ"
+          ],
+          [
+            "U",
+            "terminal voltage: potential difference across the output a–b, in volts (V)"
+          ],
+          [
+            "R₀ (R0)",
+            "internal resistance inside the source, in ohms (Ω); subscript 0 identifies the internal part"
+          ],
+          [
+            "I",
+            "current: charge flowing each second, measured in amperes (A)"
+          ],
+          [
+            "R",
+            "external load resistance, in ohms (Ω)"
+          ]
+        ]
+      }
+    ]
+  },
+  "1.3": {
+    "title": "Open, short or loaded?",
+    "goal": "Recognize the condition before choosing the equation.",
+    "cases": [
+      {
+        "id": "case-1",
+        "name": "Loaded",
+        "rule": "I = Uₛ / (R₀ + R).",
+        "when": "A practical voltage source supplies a finite resistive load.",
+        "figure": "loaded",
+        "given": "Uₛ = 12 V; R₀ = 2 Ω; R = 4 Ω.",
+        "steps": [
+          {
+            "label": "Add the resistances",
+            "equation": "Rtotal = 2 + 4 = 6 Ω",
+            "why": "The same current goes through the internal and load resistances.",
+            "audio": "audio/c1-334243f3f726b6.mp3"
+          },
+          {
+            "label": "Calculate current",
+            "equation": "I = 12 / 6 = 2 A",
+            "why": "Use the whole series resistance.",
+            "audio": "audio/c1-9feb6c65844c2f.mp3"
+          },
+          {
+            "label": "Find terminal voltage",
+            "equation": "U = IR = 2 × 4 = 8 V",
+            "why": "The load gets eight volts; four volts is lost internally.",
+            "audio": "audio/c1-7d859b43447961.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "Uₛ (Us, E)",
+            "source EMF: energy supplied per coulomb, in volts (V); also written E or Uₛ"
+          ],
+          [
+            "R₀ (R0)",
+            "internal resistance inside the source, in ohms (Ω); subscript 0 identifies the internal part"
+          ],
+          [
+            "R",
+            "external load resistance, in ohms (Ω)"
+          ],
+          [
+            "I",
+            "current: charge flowing each second, measured in amperes (A)"
+          ],
+          [
+            "Rtotal",
+            "total series resistance: R₀ + R"
+          ]
+        ]
+      },
+      {
+        "id": "case-2",
+        "name": "Open circuit",
+        "rule": "An open branch has zero current.",
+        "when": "The external terminals are disconnected.",
+        "figure": "open",
+        "given": "The same 12 V source has no connected load.",
+        "steps": [
+          {
+            "label": "Break the path",
+            "equation": "I = 0 A",
+            "why": "No current flows through the open external path.",
+            "audio": "audio/c1-1c36f1df21a659.mp3"
+          },
+          {
+            "label": "Check the internal drop",
+            "equation": "IR₀ = 0 V",
+            "why": "With no current, the internal resistor drops no voltage.",
+            "audio": "audio/c1-2548db04b04ded.mp3"
+          },
+          {
+            "label": "Read the terminals",
+            "equation": "Uopen = 12 V; Pload = 0 W",
+            "why": "An open circuit can have nonzero voltage.",
+            "audio": "audio/c1-28863b269585c2.mp3"
+          }
+        ],
+        "trap": "Open circuit means zero current, not necessarily zero voltage.",
+        "symbols": [
+          [
+            "Uₛ (Us, E)",
+            "source EMF: energy supplied per coulomb, in volts (V); also written E or Uₛ"
+          ],
+          [
+            "U",
+            "terminal voltage: potential difference across the output a–b, in volts (V)"
+          ],
+          [
+            "I",
+            "current: charge flowing each second, measured in amperes (A)"
+          ],
+          [
+            "R₀ (R0)",
+            "internal resistance inside the source, in ohms (Ω); subscript 0 identifies the internal part"
+          ],
+          [
+            "Pload",
+            "power delivered to the disconnected load, in watts (W)"
+          ]
+        ]
+      },
+      {
+        "id": "case-3",
+        "name": "Short circuit",
+        "rule": "A short has zero terminal voltage.",
+        "when": "The source model has nonzero internal resistance.",
+        "figure": "short",
+        "given": "Uₛ = 12 V; R₀ = 2 Ω; the external terminals are shorted.",
+        "steps": [
+          {
+            "label": "Set the load resistance to zero",
+            "equation": "R = 0 Ω; U = 0 V",
+            "why": "The short connects the output terminals directly.",
+            "audio": "audio/c1-01798181017125.mp3"
+          },
+          {
+            "label": "Keep internal resistance",
+            "equation": "Ishort = 12 / 2 = 6 A",
+            "why": "The internal resistance limits current in this model.",
+            "audio": "audio/c1-1c272e72f27371.mp3"
+          },
+          {
+            "label": "Check the loss",
+            "equation": "Pinternal = 6² × 2 = 72 W",
+            "why": "Zero terminal power does not mean zero internal heating.",
+            "audio": "audio/c1-d87a9ebb17fb3b.mp3"
+          }
+        ],
+        "trap": "Do not assign a finite current to a shorted ideal zero-resistance voltage source.",
+        "symbols": [
+          [
+            "Uₛ (Us, E)",
+            "source EMF: energy supplied per coulomb, in volts (V); also written E or Uₛ"
+          ],
+          [
+            "R₀ (R0)",
+            "internal resistance inside the source, in ohms (Ω); subscript 0 identifies the internal part"
+          ],
+          [
+            "R",
+            "external load resistance, in ohms (Ω)"
+          ],
+          [
+            "U",
+            "terminal voltage: potential difference across the output a–b, in volts (V)"
+          ],
+          [
+            "Ishort",
+            "current with the output terminals directly connected, in amperes (A)"
+          ],
+          [
+            "Pinternal",
+            "power converted to heat inside the source, in watts (W)"
+          ]
+        ]
+      },
+      {
+        "id": "case-4",
+        "name": "Power balance",
+        "rule": "Generated power = delivered power + internal loss.",
+        "when": "When the source has an internal voltage drop.",
+        "figure": "source-balance",
+        "given": "Teacher example: Uₛ = 125 V, U = 115 V, I = 4 A.",
+        "steps": [
+          {
+            "label": "Generated and delivered",
+            "equation": "Pₛ = 500 W; Pload = 460 W",
+            "why": "Multiply each relevant voltage by the same current.",
+            "audio": "audio/c1-1c08ceb42b7c43.mp3"
+          },
+          {
+            "label": "Find the internal resistance",
+            "equation": "R₀ = (125 − 115) / 4 = 2.5 Ω",
+            "why": "The missing ten volts is the internal resistor drop.",
+            "audio": "audio/c1-47800e7bced0f5.mp3"
+          },
+          {
+            "label": "Verify the balance",
+            "equation": "Ploss = 40 W = I²R₀",
+            "why": "Five hundred watts supplied equals four hundred sixty delivered plus forty lost.",
+            "audio": "audio/c1-9876bc633fac1b.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "Uₛ (Us, E)",
+            "source EMF: energy supplied per coulomb, in volts (V); also written E or Uₛ"
+          ],
+          [
+            "U",
+            "terminal voltage: potential difference across the output a–b, in volts (V)"
+          ],
+          [
+            "I",
+            "current: charge flowing each second, measured in amperes (A)"
+          ],
+          [
+            "R₀ (R0)",
+            "internal resistance inside the source, in ohms (Ω); subscript 0 identifies the internal part"
+          ],
+          [
+            "Generated power",
+            "UₛI: power supplied by the source action, in watts (W)"
+          ],
+          [
+            "Delivered power",
+            "UI: power reaching the external load, in watts (W)"
+          ],
+          [
+            "Internal loss",
+            "I²R₀: heat produced inside the source, in watts (W)"
+          ]
+        ]
+      }
+    ]
+  },
+  "1.4": {
+    "title": "Get the signs right",
+    "goal": "Choose references once, then let the answer’s sign tell you the direction.",
+    "cases": [
+      {
+        "id": "case-1",
+        "name": "Change the ground",
+        "rule": "Changing ground changes potentials, not voltage differences.",
+        "when": "When a reference node is specified or moved.",
+        "figure": "ground-three",
+        "given": "10 V source; 4 Ω, 3 Ω and 3 Ω in series.",
+        "steps": [
+          {
+            "label": "Use the bottom node as zero",
+            "equation": "I = 1 A; Vₐ = 10; Vᵦ = 6; V꜀ = 3 V",
+            "why": "The series drops are four, three and three volts.",
+            "audio": "audio/c1-d310eb0e757330.mp3"
+          },
+          {
+            "label": "Use the top node as zero",
+            "equation": "Vₐ = 0; Vᵦ = −4; V꜀ = −7; Vd = −10 V",
+            "why": "Subtract ten volts from every potential.",
+            "audio": "audio/c1-a8f96e8f1ba447.mp3"
+          },
+          {
+            "label": "Check one unchanged difference",
+            "equation": "Uₐᵦ = 4 V in both choices",
+            "why": "Circuit ground is a chosen reference; it need not be physical earth.",
+            "audio": "audio/c1-dfd83d453a17d1.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "Vₐ, Vᵦ, V꜀, Vᵈ",
+            "node potentials relative to the selected ground, in volts (V)"
+          ],
+          [
+            "Ground",
+            "reference node assigned 0 V; moving it changes the potential labels"
+          ],
+          [
+            "Voltage difference",
+            "potential at the first point minus potential at the second point"
+          ]
+        ]
+      },
+      {
+        "id": "case-2",
+        "name": "Reverse voltage polarity",
+        "rule": "Uᵦₐ = −Uₐᵦ.",
+        "when": "When the order of voltage subscripts or polarity marks changes.",
+        "figure": "polarity",
+        "given": "A 5 Ω resistor has 2 A flowing from a to b.",
+        "steps": [
+          {
+            "label": "Use a as the positive reference",
+            "equation": "Uₐᵦ = 5 × 2 = 10 V",
+            "why": "The current enters the positive terminal.",
+            "audio": "audio/c1-4a1c33a6627942.mp3"
+          },
+          {
+            "label": "Swap the voltage reference",
+            "equation": "Uᵦₐ = −10 V",
+            "why": "Swapping the ordered terminals reverses the voltage sign.",
+            "audio": "audio/c1-18e8320cea8a1e.mp3"
+          },
+          {
+            "label": "Keep the physical circuit",
+            "equation": "The resistor and current did not change",
+            "why": "Only the measurement reference changed.",
+            "audio": "audio/c1-d35a917aad1663.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "Uₐᵦ",
+            "voltage of a relative to b: Uₐᵦ = Vₐ − Vᵦ, in volts (V)"
+          ],
+          [
+            "Uᵦₐ",
+            "voltage of b relative to a, in volts (V); the opposite order to Uₐᵦ"
+          ],
+          [
+            "R",
+            "resistance, measured in ohms (Ω)"
+          ],
+          [
+            "I",
+            "current: charge flowing each second, measured in amperes (A)"
+          ]
+        ]
+      },
+      {
+        "id": "case-3",
+        "name": "Negative current",
+        "rule": "A negative result means flow opposite to the chosen arrow.",
+        "when": "When your solved current has a minus sign.",
+        "figure": "negative-current",
+        "given": "10 V across a 5 Ω resistor; choose the current arrow upward.",
+        "steps": [
+          {
+            "label": "Keep the chosen arrow",
+            "equation": "U = −RI",
+            "why": "The chosen current enters the resistor’s negative terminal.",
+            "audio": "audio/c1-998369a6e5ccd5.mp3"
+          },
+          {
+            "label": "Solve with that reference",
+            "equation": "I = −10 / 5 = −2 A",
+            "why": "The minus sign belongs to the chosen reference.",
+            "audio": "audio/c1-245267ca7eab0c.mp3"
+          },
+          {
+            "label": "Interpret the result",
+            "equation": "Actual current: 2 A downward",
+            "why": "Do not silently flip the arrow halfway through the calculation.",
+            "audio": "audio/c1-74edba2e09d8f5.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "U",
+            "voltage measured with the marked + and − references, in volts (V)"
+          ],
+          [
+            "R",
+            "resistance, measured in ohms (Ω)"
+          ],
+          [
+            "I",
+            "signed current relative to the chosen arrow, in amperes (A)"
+          ],
+          [
+            "Negative I",
+            "actual current flows opposite to that arrow"
+          ]
+        ]
+      },
+      {
+        "id": "case-4",
+        "name": "Midpoint potential",
+        "rule": "Equal series resistors split the potential difference equally.",
+        "when": "The midpoint is unloaded.",
+        "figure": "midpoint",
+        "given": "Two equal resistors lie between +12 V and −10 V.",
+        "steps": [
+          {
+            "label": "Find the full difference",
+            "equation": "12 − (−10) = 22 V",
+            "why": "The endpoints are twenty-two volts apart.",
+            "audio": "audio/c1-1a6536c8df18f8.mp3"
+          },
+          {
+            "label": "Split it equally",
+            "equation": "22 / 2 = 11 V",
+            "why": "Each equal resistor drops eleven volts.",
+            "audio": "audio/c1-ecc3fbdb6074a2.mp3"
+          },
+          {
+            "label": "Use the stated reference",
+            "equation": "Vmid = −10 + 11 = 1 V",
+            "why": "The midpoint is one volt, not eleven volts.",
+            "audio": "audio/c1-cfd800df68a810.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "Vmid",
+            "midpoint potential relative to ground, in volts (V)"
+          ],
+          [
+            "+12 V, −10 V",
+            "end-point potentials measured against the same ground"
+          ],
+          [
+            "Equal resistors",
+            "two series resistors with the same resistance; the midpoint has no extra load"
+          ]
+        ]
+      }
+    ]
+  },
+  "1.5": {
+    "title": "Elements and ideal sources",
+    "goal": "Know which quantity an element or source fixes.",
+    "cases": [
+      {
+        "id": "case-1",
+        "name": "Resistor",
+        "rule": "u = Ri with passive references.",
+        "when": "Current enters the terminal marked positive.",
+        "figure": "resistor-law",
+        "given": "R = 8 Ω; u = 16 V.",
+        "steps": [
+          {
+            "label": "Choose the reference",
+            "equation": "u = Ri",
+            "why": "Keep the voltage and current references consistent.",
+            "audio": "audio/c1-7b23558870f459.mp3"
+          },
+          {
+            "label": "Find the current",
+            "equation": "i = 16 / 8 = 2 A",
+            "why": "Divide voltage by resistance.",
+            "audio": "audio/c1-87e7922ac5aae2.mp3"
+          },
+          {
+            "label": "Check absorbed power",
+            "equation": "P = ui = 32 W",
+            "why": "A positive ideal resistor dissipates nonnegative power.",
+            "audio": "audio/c1-69453535ce2e71.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "u",
+            "voltage / potential difference, measured in volts (V)"
+          ],
+          [
+            "i",
+            "current: charge flowing each second, measured in amperes (A)"
+          ],
+          [
+            "R",
+            "resistance, measured in ohms (Ω)"
+          ],
+          [
+            "P",
+            "power: energy transferred each second, measured in watts (W)"
+          ]
+        ]
+      },
+      {
+        "id": "case-2",
+        "name": "Capacitor",
+        "rule": "iC = C · duC/dt.",
+        "when": "Use the capacitor’s voltage slope, with passive references.",
+        "figure": "capacitor-law",
+        "given": "C = 10 µF; voltage rises by 2 V in 10 ms.",
+        "steps": [
+          {
+            "label": "Find the slope",
+            "equation": "duC/dt = 2 / 0.010 = 200 V/s",
+            "why": "Use the rate of change, not the voltage alone.",
+            "audio": "audio/c1-3941934e77c1bf.mp3"
+          },
+          {
+            "label": "Multiply by capacitance",
+            "equation": "iC = 10 × 10⁻⁶ × 200 = 2 mA",
+            "why": "A constant voltage gives zero ideal capacitor current.",
+            "audio": "audio/c1-ca81600fba3339.mp3"
+          },
+          {
+            "label": "Recognize stored energy",
+            "equation": "WC = ½CuC²; at 2 V, WC = 20 µJ",
+            "why": "A capacitor stores electrical energy; it does not store current.",
+            "audio": "audio/c1-f7ca2b015352db.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "C",
+            "capacitance: charge stored per volt, measured in farads (F)"
+          ],
+          [
+            "uC",
+            "voltage across the capacitor, in volts (V)"
+          ],
+          [
+            "iC",
+            "current entering its positive terminal, in amperes (A)"
+          ],
+          [
+            "duC/dt",
+            "how fast capacitor voltage changes, in volts per second (V/s)"
+          ],
+          [
+            "WC",
+            "energy stored in the capacitor, in joules (J)"
+          ],
+          [
+            "µF, ms",
+            "1 µF = 10⁻⁶ F; 1 ms = 0.001 s"
+          ]
+        ]
+      },
+      {
+        "id": "case-3",
+        "name": "Inductor",
+        "rule": "uL = L · diL/dt.",
+        "when": "Use the inductor’s current slope, with passive references.",
+        "figure": "inductor-law",
+        "given": "L = 0.5 H; current rises by 2 A in 0.5 s.",
+        "steps": [
+          {
+            "label": "Find the current slope",
+            "equation": "diL/dt = 2 / 0.5 = 4 A/s",
+            "why": "Use the change in current per second.",
+            "audio": "audio/c1-06e0c1fb0a6189.mp3"
+          },
+          {
+            "label": "Multiply by inductance",
+            "equation": "uL = 0.5 × 4 = 2 V",
+            "why": "Constant ideal inductor current gives zero voltage.",
+            "audio": "audio/c1-a6b4dabd6566b1.mp3"
+          },
+          {
+            "label": "Recognize stored energy",
+            "equation": "WL = ½LiL²; at 2 A, WL = 1 J",
+            "why": "The induced EMF opposes the change; in the course convention uL = −e.",
+            "audio": "audio/c1-68b61dadf636f5.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "L",
+            "inductance, measured in henries (H)"
+          ],
+          [
+            "iL",
+            "current through the inductor, in amperes (A)"
+          ],
+          [
+            "uL",
+            "inductor voltage with passive references, in volts (V)"
+          ],
+          [
+            "diL/dt",
+            "how fast inductor current changes, in amperes per second (A/s)"
+          ],
+          [
+            "WL",
+            "energy stored in the inductor, in joules (J)"
+          ]
+        ]
+      },
+      {
+        "id": "case-4",
+        "name": "Ideal voltage source",
+        "rule": "An ideal voltage source fixes voltage, not current.",
+        "when": "When the source is explicitly ideal.",
+        "figure": "load-change",
+        "given": "10 V source; start with one 2 Ω load.",
+        "steps": [
+          {
+            "label": "One branch",
+            "equation": "I = 10 / 2 = 5 A",
+            "why": "The connected resistance determines current.",
+            "audio": "audio/c1-eb1deddbc8fb17.mp3"
+          },
+          {
+            "label": "Add an equal parallel branch",
+            "equation": "Isource = 5 + 5 = 10 A",
+            "why": "The source still imposes ten volts.",
+            "audio": "audio/c1-d29a88cefa5300.mp3"
+          },
+          {
+            "label": "Keep the distinction",
+            "equation": "Voltage fixed; current changes",
+            "why": "Do not assume an ideal voltage source fixes both voltage and current.",
+            "audio": "audio/c1-0a9074953ed915.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "U",
+            "fixed ideal-source voltage, in volts (V)"
+          ],
+          [
+            "I",
+            "current: charge flowing each second, measured in amperes (A)"
+          ],
+          [
+            "Isource",
+            "total current delivered by the source to all load branches, in amperes (A)"
+          ],
+          [
+            "R",
+            "resistance, measured in ohms (Ω)"
+          ]
+        ]
+      },
+      {
+        "id": "case-5",
+        "name": "Ideal current source",
+        "rule": "An ideal current source fixes current, not voltage.",
+        "when": "When the source is explicitly ideal.",
+        "figure": "current-source",
+        "given": "A 1 A source feeds a resistive load.",
+        "steps": [
+          {
+            "label": "Use a 1 Ω load",
+            "equation": "U = 1 × 1 = 1 V",
+            "why": "The load determines the required source voltage.",
+            "audio": "audio/c1-3a9bcc0c832d08.mp3"
+          },
+          {
+            "label": "Change to 10 Ω",
+            "equation": "U = 1 × 10 = 10 V",
+            "why": "The source current stays at one ampere.",
+            "audio": "audio/c1-ff6133a1316925.mp3"
+          },
+          {
+            "label": "Keep the distinction",
+            "equation": "Current fixed; voltage changes",
+            "why": "The source imposes current while the connected circuit determines voltage.",
+            "audio": "audio/c1-23074ba132f1fd.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "I",
+            "fixed ideal-source current, in amperes (A)"
+          ],
+          [
+            "U",
+            "voltage across the source and its load, in volts (V)"
+          ],
+          [
+            "R",
+            "resistance, measured in ohms (Ω)"
+          ]
+        ]
+      },
+      {
+        "id": "case-6",
+        "name": "Absorb or supply?",
+        "rule": "pabs = ui when current enters the positive terminal.",
+        "when": "When deciding whether a device absorbs or delivers power.",
+        "figure": "source-absorbs",
+        "given": "A 3 V source receives 3 A into its positive terminal.",
+        "steps": [
+          {
+            "label": "Read the actual direction",
+            "equation": "Current enters +",
+            "why": "The word source does not decide the power sign.",
+            "audio": "audio/c1-19dc60fa7bf6f2.mp3"
+          },
+          {
+            "label": "Calculate absorbed power",
+            "equation": "pabs = 3 × 3 = +9 W",
+            "why": "Positive absorbed power means the device takes in energy.",
+            "audio": "audio/c1-c8570ebe893856.mp3"
+          },
+          {
+            "label": "Check the other source",
+            "equation": "The 3 A source supplies 9 W",
+            "why": "The power balance still holds. All five teacher power cases are available in the full lesson below.",
+            "audio": "audio/c1-96a2960b1006c5.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "pabs",
+            "power absorbed by the device, in watts (W); positive means energy enters it"
+          ],
+          [
+            "u",
+            "voltage with the marked positive and negative terminals, in volts (V)"
+          ],
+          [
+            "i",
+            "current defined entering the positive terminal, in amperes (A)"
+          ]
+        ]
+      }
+    ]
+  },
+  "1.6": {
+    "title": "Change the source form",
+    "goal": "Simplify the external network without changing what the load sees.",
+    "cases": [
+      {
+        "id": "case-1",
+        "name": "Voltage → current",
+        "rule": "Is = Us / R; series R becomes parallel R.",
+        "when": "A finite, nonzero series resistance accompanies the voltage source.",
+        "figure": "transform",
+        "given": "10 V in series with 2 Ω; a 3 Ω load.",
+        "steps": [
+          {
+            "label": "Start with the voltage form",
+            "equation": "IL = 10 / (2 + 3) = 2 A",
+            "why": "The load and source resistance are in series.",
+            "audio": "audio/c1-11d539293ccece.mp3"
+          },
+          {
+            "label": "Transform the source",
+            "equation": "Is = 10 / 2 = 5 A",
+            "why": "Keep two ohms, but put it in parallel. The current arrow points toward the original positive terminal.",
+            "audio": "audio/c1-84f76ea73040ca.mp3"
+          },
+          {
+            "label": "Check the load",
+            "equation": "IL = 5 × 2 / (2 + 3) = 2 A",
+            "why": "Both forms give the same external load current.",
+            "audio": "audio/c1-0e6611d779c74f.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "Uₛ (Us, E)",
+            "source EMF: energy supplied per coulomb, in volts (V); also written E or Uₛ"
+          ],
+          [
+            "Iₛ (Is)",
+            "current set by the ideal current source, in amperes (A)"
+          ],
+          [
+            "IL",
+            "current through the external load, in amperes (A); subscript L means load"
+          ],
+          [
+            "R",
+            "source resistance: series in the voltage form, parallel in the current form, in ohms (Ω)"
+          ]
+        ]
+      },
+      {
+        "id": "case-2",
+        "name": "Current → voltage",
+        "rule": "Us = IsR; parallel R becomes series R.",
+        "when": "A finite, nonzero parallel resistance accompanies the current source.",
+        "figure": "transform-reverse",
+        "given": "5 A in parallel with 2 Ω; a 3 Ω load.",
+        "steps": [
+          {
+            "label": "Start with current division",
+            "equation": "IL = 5 × 2 / 5 = 2 A",
+            "why": "The current divides between the internal resistor and the load.",
+            "audio": "audio/c1-821946cac5d43b.mp3"
+          },
+          {
+            "label": "Transform the source",
+            "equation": "Us = 5 × 2 = 10 V",
+            "why": "Keep two ohms in series with the voltage source.",
+            "audio": "audio/c1-39bf3e72109466.mp3"
+          },
+          {
+            "label": "Check the load",
+            "equation": "IL = 10 / (2 + 3) = 2 A",
+            "why": "Equivalence is at the terminals, not in every internal power value.",
+            "audio": "audio/c1-510563618a3651.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "Uₛ (Us, E)",
+            "source EMF: energy supplied per coulomb, in volts (V); also written E or Uₛ"
+          ],
+          [
+            "Iₛ (Is)",
+            "current set by the ideal current source, in amperes (A)"
+          ],
+          [
+            "IL",
+            "current through the external load, in amperes (A); subscript L means load"
+          ],
+          [
+            "R",
+            "source resistance: parallel in the current form, series in the voltage form, in ohms (Ω)"
+          ]
+        ]
+      },
+      {
+        "id": "case-3",
+        "name": "Combine sources",
+        "rule": "Transform compatible sources, then combine their currents.",
+        "when": "The branches share the same output terminals and polarity.",
+        "figure": "combine",
+        "given": "Teacher example: 40 V + 2 Ω and 20 V + 2 Ω feed a 4 Ω load.",
+        "steps": [
+          {
+            "label": "Transform both branches",
+            "equation": "20 A + 10 A = 30 A",
+            "why": "The two equivalent source arrows point in the same direction.",
+            "audio": "audio/c1-d8db1f3b9074b7.mp3"
+          },
+          {
+            "label": "Combine internal resistors",
+            "equation": "2 Ω ∥ 2 Ω = 1 Ω",
+            "why": "Both source resistances are now in parallel.",
+            "audio": "audio/c1-9d618c05ca0d30.mp3"
+          },
+          {
+            "label": "Divide into the load",
+            "equation": "IL = 30 × 1 / (1 + 4) = 6 A",
+            "why": "The four ohm load has twenty-four volts across it.",
+            "audio": "audio/c1-5aeef4b1cbee06.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "IL",
+            "current through the external load, in amperes (A); subscript L means load"
+          ],
+          [
+            "∥",
+            "parallel connection; R₁ ∥ R₂ = R₁R₂ / (R₁ + R₂)"
+          ],
+          [
+            "30 A",
+            "sum of the two compatible source currents"
+          ],
+          [
+            "1 Ω",
+            "equivalent parallel source resistance"
+          ]
+        ]
+      },
+      {
+        "id": "case-4",
+        "name": "Simplify an ideal source",
+        "rule": "Some extra resistors do not change the external load quantity.",
+        "when": "A resistor is across an ideal voltage source, or in series with an ideal current source.",
+        "figure": "irrelevant",
+        "given": "Compare what the external load sees.",
+        "steps": [
+          {
+            "label": "Across an ideal voltage source",
+            "equation": "Uload = 10 V; Iload = 10 / 5 = 2 A",
+            "why": "An added parallel resistor cannot change the imposed voltage.",
+            "audio": "audio/c1-df7fb26731d524.mp3"
+          },
+          {
+            "label": "In series with an ideal current source",
+            "equation": "Iload = 1 A; Uload = 1 × 5 = 5 V",
+            "why": "An added series resistor cannot change the imposed current.",
+            "audio": "audio/c1-6de4304115ef3a.mp3"
+          },
+          {
+            "label": "Keep the boundary clear",
+            "equation": "External behavior only",
+            "why": "The simplification does not preserve the removed resistor’s internal power.",
+            "audio": "audio/c1-16879c8663c476.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "Ideal voltage source",
+            "holds its specified voltage across its terminals"
+          ],
+          [
+            "Ideal current source",
+            "holds its specified current through its branch"
+          ],
+          [
+            "External equivalence",
+            "the load sees the same voltage/current relationship; internal power can differ"
+          ]
+        ]
+      }
+    ]
+  },
+  "1.7": {
+    "title": "Write the right balance",
+    "goal": "Use current balance at nodes and voltage balance around loops.",
+    "cases": [
+      {
+        "id": "case-1",
+        "name": "KCL: a node",
+        "rule": "Sum of incoming currents = sum of outgoing currents.",
+        "when": "Apply consistent current references at a node.",
+        "figure": "kcl",
+        "given": "5 A enters; 2 A and I leave.",
+        "steps": [
+          {
+            "label": "Read the arrows",
+            "equation": "5 = 2 + I",
+            "why": "Classify currents by the arrows you chose.",
+            "audio": "audio/c1-ee11a13ef83db1.mp3"
+          },
+          {
+            "label": "Solve the unknown",
+            "equation": "I = 5 − 2 = 3 A",
+            "why": "The outgoing current is three amperes.",
+            "audio": "audio/c1-2d9360522f71ad.mp3"
+          },
+          {
+            "label": "Check the balance",
+            "equation": "5 − 2 − 3 = 0",
+            "why": "Charge does not accumulate at an ideal lumped-circuit node.",
+            "audio": "audio/c1-5bdb3efd54ea3a.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "I",
+            "unknown outgoing current, in amperes (A)"
+          ],
+          [
+            "KCL",
+            "Kirchhoff’s current law: charge does not accumulate at an ideal circuit node"
+          ],
+          [
+            "Node",
+            "connected junction where the branch currents meet"
+          ]
+        ]
+      },
+      {
+        "id": "case-2",
+        "name": "KVL: a loop",
+        "rule": "The algebraic sum of loop voltage changes is zero.",
+        "when": "Choose one traversal direction and keep every polarity consistent.",
+        "figure": "kvl",
+        "given": "12 V source; 2 Ω and 4 Ω in series.",
+        "steps": [
+          {
+            "label": "Choose the traversal",
+            "equation": "+12 − 2I − 4I = 0",
+            "why": "The source is a rise and the resistor voltages are drops in this traversal.",
+            "audio": "audio/c1-e5c20c357859a3.mp3"
+          },
+          {
+            "label": "Solve",
+            "equation": "I = 12 / 6 = 2 A",
+            "why": "The same current goes through both series resistors.",
+            "audio": "audio/c1-65d83f6d462c2e.mp3"
+          },
+          {
+            "label": "Check the drops",
+            "equation": "12 − 4 − 8 = 0",
+            "why": "Reversing traversal reverses every sign, giving an equivalent equation.",
+            "audio": "audio/c1-fbf03a20018367.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "I",
+            "common current through the series path, in amperes (A)"
+          ],
+          [
+            "RI",
+            "resistor voltage drop, in volts (V)"
+          ],
+          [
+            "KVL",
+            "Kirchhoff’s voltage law: signed voltage changes around a closed loop add to zero"
+          ]
+        ]
+      },
+      {
+        "id": "case-3",
+        "name": "Count independent equations",
+        "rule": "Use n − 1 node equations and b − n + 1 loop equations.",
+        "when": "For the connected circuit graph used by the course.",
+        "figure": "branches",
+        "given": "Teacher graph: n = 3 essential nodes, b = 5 branches.",
+        "steps": [
+          {
+            "label": "Count the nodes and branches",
+            "equation": "n = 3; b = 5",
+            "why": "Connected conductors count as one node.",
+            "audio": "audio/c1-f7ea4427c3475d.mp3"
+          },
+          {
+            "label": "Count independent KCL equations",
+            "equation": "n − 1 = 2",
+            "why": "A third node equation would repeat information.",
+            "audio": "audio/c1-d19c5aa226f494.mp3"
+          },
+          {
+            "label": "Count independent loop equations",
+            "equation": "b − n + 1 = 3",
+            "why": "All possible loops are not the same as an independent loop set. A mesh contains no smaller loop.",
+            "audio": "audio/c1-43ebd33d9bd816.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "n",
+            "number of nodes used in the connected circuit graph"
+          ],
+          [
+            "b",
+            "number of branches in that graph"
+          ],
+          [
+            "n − 1",
+            "number of independent node-current equations"
+          ],
+          [
+            "b − n + 1",
+            "number of independent loop-voltage equations"
+          ]
+        ]
+      },
+      {
+        "id": "case-4",
+        "name": "A whole boundary",
+        "rule": "KCL also applies to a closed boundary around several elements.",
+        "when": "When internal details are not needed for the external current balance.",
+        "figure": "boundary",
+        "given": "2 A and 3 A enter a boundary; one current leaves.",
+        "steps": [
+          {
+            "label": "Choose the boundary",
+            "equation": "Iout = I₁ + I₂",
+            "why": "Count only currents crossing the boundary.",
+            "audio": "audio/c1-24f405fb983bc3.mp3"
+          },
+          {
+            "label": "Add the external currents",
+            "equation": "Iout = 2 + 3 = 5 A",
+            "why": "Internal currents cancel when the enclosed node equations are added.",
+            "audio": "audio/c1-2f5512c25da66a.mp3"
+          },
+          {
+            "label": "Use the same law",
+            "equation": "Σ Icrossing = 0",
+            "why": "KCL and KVL do not require a linear circuit; superposition does.",
+            "audio": "audio/c1-5a3eb8e574c1a8.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "I₁, I₂",
+            "currents entering the boundary, in amperes (A)"
+          ],
+          [
+            "Iout",
+            "current leaving the boundary, in amperes (A)"
+          ],
+          [
+            "Σ",
+            "add all the indicated signed currents"
+          ],
+          [
+            "Boundary",
+            "imagined closed line enclosing part of the circuit"
+          ]
+        ]
+      },
+      {
+        "id": "case-5",
+        "name": "Terminal-voltage signs",
+        "rule": "Use the current reference to choose Us − RI or Us + RI.",
+        "when": "A source and resistor form a two-terminal branch.",
+        "figure": "terminal",
+        "given": "Us = 10 V; R = 2 Ω; the external circuit sets a 2 A current.",
+        "steps": [
+          {
+            "label": "Current leaves the positive output",
+            "equation": "U = 10 − 2 × 2 = 6 V",
+            "why": "The resistor drop reduces the terminal voltage in this reference.",
+            "audio": "audio/c1-dcbdde5fa44865.mp3"
+          },
+          {
+            "label": "Current enters the positive output",
+            "equation": "U = 10 + 2 × 2 = 14 V",
+            "why": "The current reference reverses the resistor voltage term.",
+            "audio": "audio/c1-edbfe414c2353b.mp3"
+          },
+          {
+            "label": "Keep one sign convention",
+            "equation": "U = Us ∓ RI",
+            "why": "A generalized loop can include the terminal voltage between two points.",
+            "audio": "audio/c1-4a8e7bb61e5b88.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "Uₛ (Us, E)",
+            "source EMF: energy supplied per coulomb, in volts (V); also written E or Uₛ"
+          ],
+          [
+            "U",
+            "terminal voltage: potential difference across the output a–b, in volts (V)"
+          ],
+          [
+            "I",
+            "current: charge flowing each second, measured in amperes (A)"
+          ],
+          [
+            "R",
+            "series resistance in this two-terminal branch, in ohms (Ω)"
+          ],
+          [
+            "∓",
+            "use − when current leaves the positive output; use + when it enters"
+          ]
+        ]
+      }
+    ]
+  },
+  "1.8": {
+    "title": "Solve branch currents",
+    "goal": "Turn one diagram into a complete, independent equation system.",
+    "cases": [
+      {
+        "id": "case-1",
+        "name": "Assign the arrows",
+        "rule": "Choose branch-current references before writing equations.",
+        "when": "Several unknown branch currents prevent easy reduction.",
+        "figure": "branches",
+        "given": "The teacher’s five-branch graph has symbolic component values.",
+        "steps": [
+          {
+            "label": "Identify the five unknowns",
+            "equation": "I₁, I₂, I₃, I₄, I₅",
+            "why": "The drawing’s arrows are references, not promises about actual flow.",
+            "audio": "audio/c1-bab3aeff8482ea.mp3"
+          },
+          {
+            "label": "Write the two node equations",
+            "equation": "I₁ − I₃ − I₅ = 0; I₅ + I₂ − I₄ = 0",
+            "why": "Use one independent equation at each of the two top nodes.",
+            "audio": "audio/c1-6c07c99a8f4e57.mp3"
+          },
+          {
+            "label": "Avoid a repeated equation",
+            "equation": "2 independent KCL equations",
+            "why": "The bottom-node balance follows from these two equations.",
+            "audio": "audio/c1-e90b492512abf6.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "I₁ … I₅",
+            "five branch currents, each signed relative to its chosen arrow, in amperes (A)"
+          ],
+          [
+            "Subscripts 1 … 5",
+            "identify branches; they are labels, not multiplication"
+          ],
+          [
+            "KCL",
+            "Kirchhoff’s current law: signed currents at each node sum to zero"
+          ]
+        ]
+      },
+      {
+        "id": "case-2",
+        "name": "Complete the system",
+        "rule": "Combine independent KCL, KVL and element laws.",
+        "when": "Use the same arrows throughout the equation system.",
+        "figure": "branches",
+        "given": "Continue with the teacher’s symbolic five-branch circuit.",
+        "steps": [
+          {
+            "label": "Left loop",
+            "equation": "I₃R₃ + I₁R₁ − Us₁ = 0",
+            "why": "Use the marked source polarity and current references.",
+            "audio": "audio/c1-b2f85cacf5e1e5.mp3"
+          },
+          {
+            "label": "Middle and right loops",
+            "equation": "I₅R₅ + I₄R₄ − I₃R₃ = 0; Us₂ − I₂R₂ − I₄R₄ = 0",
+            "why": "These give the other two independent loop equations.",
+            "audio": "audio/c1-0e7c073666ebd2.mp3"
+          },
+          {
+            "label": "Solve the complete system",
+            "equation": "2 node + 3 loop = 5 equations",
+            "why": "The teacher gives symbolic values here, so the intended result is this system, not an invented numerical current.",
+            "audio": "audio/c1-2d099f7788d2f9.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "I₁ … I₅",
+            "signed currents in branches 1 to 5, in amperes (A)"
+          ],
+          [
+            "R₁ … R₅",
+            "resistances in branches 1 to 5, in ohms (Ω)"
+          ],
+          [
+            "Us₁, Us₂",
+            "EMFs of the two voltage sources, in volts (V)"
+          ],
+          [
+            "IₖRₖ",
+            "voltage drop across branch k’s resistor, in volts (V)"
+          ],
+          [
+            "KVL",
+            "Kirchhoff’s voltage law: signed changes around a closed loop sum to zero"
+          ]
+        ]
+      },
+      {
+        "id": "case-3",
+        "name": "Interpret a negative answer",
+        "rule": "Keep a negative solution and interpret its direction.",
+        "when": "The solved current disagrees with your original arrow.",
+        "figure": "negative-current",
+        "given": "A 10 V resistor drop is paired with an upward current reference through 5 Ω.",
+        "steps": [
+          {
+            "label": "Use the chosen references",
+            "equation": "10 = −5I",
+            "why": "The chosen current enters the negative voltage terminal.",
+            "audio": "audio/c1-5c89f5b616190c.mp3"
+          },
+          {
+            "label": "Calculate",
+            "equation": "I = −2 A",
+            "why": "The algebraic answer is negative in that reference.",
+            "audio": "audio/c1-387563afd64c69.mp3"
+          },
+          {
+            "label": "Report the physical direction",
+            "equation": "2 A downward",
+            "why": "Changing the arrow without changing its signed variable makes the equations inconsistent.",
+            "audio": "audio/c1-c169414841c561.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "I",
+            "signed current relative to the upward arrow, in amperes (A)"
+          ],
+          [
+            "−2 A",
+            "actual current is 2 A opposite to the chosen arrow"
+          ],
+          [
+            "5 Ω",
+            "resistor’s resistance"
+          ],
+          [
+            "10 V",
+            "marked voltage drop across that resistor"
+          ]
+        ]
+      }
+    ]
+  },
+  "1.9": {
+    "title": "Separate the sources",
+    "goal": "Find each contribution with the same reference, then add the signed results.",
+    "cases": [
+      {
+        "id": "case-1",
+        "name": "Suppress a voltage source",
+        "rule": "Set an inactive independent ideal voltage source to zero: a short.",
+        "when": "Superposition in a linear circuit; keep resistances.",
+        "figure": "super-voltage",
+        "given": "Teacher example: 18 V + 1 Ω and 9 V + 1 Ω feed a 4 Ω load.",
+        "steps": [
+          {
+            "label": "Keep the 18 V source",
+            "equation": "Other voltage source → short",
+            "why": "The one ohm resistor in that branch must remain.",
+            "audio": "audio/c1-76affe27c4ef7c.mp3"
+          },
+          {
+            "label": "Find this contribution",
+            "equation": "Vnode = 8 V; IL′ = 8 / 4 = 2 A",
+            "why": "The inactive branch still affects the network through its resistance.",
+            "audio": "audio/c1-d76624fd93225f.mp3"
+          },
+          {
+            "label": "Keep the reference",
+            "equation": "IL′ = +2 A downward",
+            "why": "Use the same current arrow when solving the other contribution.",
+            "audio": "audio/c1-d0e4b881e41e22.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "IL",
+            "current through the external load, in amperes (A); subscript L means load"
+          ],
+          [
+            "IL′",
+            "load current due to the first source acting alone, in amperes (A)"
+          ],
+          [
+            "Vnode",
+            "potential of the load’s upper node relative to the bottom node, in volts (V)"
+          ],
+          [
+            "Inactive source",
+            "independent source set to zero for this one contribution"
+          ]
+        ]
+      },
+      {
+        "id": "case-2",
+        "name": "Suppress a current source",
+        "rule": "Set an inactive independent ideal current source to zero: an open.",
+        "when": "Superposition in a linear circuit; dependent sources stay active.",
+        "figure": "super-current",
+        "given": "With the current-source branch opened, 12 V drives 2 Ω + 4 Ω.",
+        "steps": [
+          {
+            "label": "Remove only its imposed current",
+            "equation": "Inactive current source → open",
+            "why": "Do not replace a zero-current source by a conducting wire.",
+            "audio": "audio/c1-dd870b1b7636e6.mp3"
+          },
+          {
+            "label": "Solve the remaining path",
+            "equation": "IL = 12 / (2 + 4) = 2 A",
+            "why": "The active voltage source still drives the resistor path.",
+            "audio": "audio/c1-455e45f5e54ed1.mp3"
+          },
+          {
+            "label": "Keep signs and resistors",
+            "equation": "Contribution: +2 A downward",
+            "why": "Preserve resistances and any dependent-source constraints.",
+            "audio": "audio/c1-7690cdfca37ed7.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "IL",
+            "current through the external load, in amperes (A); subscript L means load"
+          ],
+          [
+            "Inactive source",
+            "independent source set to zero for this one contribution"
+          ],
+          [
+            "Open",
+            "disconnected path: no current crosses the inactive ideal current source"
+          ]
+        ]
+      },
+      {
+        "id": "case-3",
+        "name": "Add the contributions",
+        "rule": "Add currents or voltages algebraically.",
+        "when": "Each source contribution uses the same target and reference.",
+        "figure": "super-add",
+        "given": "Use the same 18 V / 9 V teacher example.",
+        "steps": [
+          {
+            "label": "First source alone",
+            "equation": "IL′ = +2 A",
+            "why": "With the nine volt source zeroed, the load-node voltage is eight volts.",
+            "audio": "audio/c1-1878b41d864d64.mp3"
+          },
+          {
+            "label": "Second source alone",
+            "equation": "IL″ = +1 A",
+            "why": "With the eighteen volt source zeroed, the load-node voltage is four volts.",
+            "audio": "audio/c1-e3ee6d1575c503.mp3"
+          },
+          {
+            "label": "Add signed answers",
+            "equation": "IL = 2 + 1 = 3 A",
+            "why": "The combined node voltage is twelve volts. If a contribution were negative, you would subtract it.",
+            "audio": "audio/c1-64f69b8b1892f3.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "IL",
+            "current through the external load, in amperes (A); subscript L means load"
+          ],
+          [
+            "IL′",
+            "load current from the first source alone, in amperes (A)"
+          ],
+          [
+            "IL″",
+            "load current from the second source alone, in amperes (A)"
+          ],
+          [
+            "′ and ″",
+            "labels for separate contributions; they do not mean derivatives here"
+          ]
+        ]
+      },
+      {
+        "id": "case-4",
+        "name": "Power is different",
+        "rule": "Calculate power from the total current or voltage.",
+        "when": "Do not superpose powers in a resistor.",
+        "figure": "power-warning",
+        "given": "R = 4 Ω; current contributions +2 A and −1 A.",
+        "steps": [
+          {
+            "label": "Add current first",
+            "equation": "I = 2 − 1 = 1 A",
+            "why": "Current is a linear response; keep the signs.",
+            "audio": "audio/c1-9bc0ab725ca2c1.mp3"
+          },
+          {
+            "label": "Calculate the actual power",
+            "equation": "P = I²R = 1² × 4 = 4 W",
+            "why": "Use the total current through the resistor.",
+            "audio": "audio/c1-9b174b7fe32328.mp3"
+          },
+          {
+            "label": "Reject the tempting shortcut",
+            "equation": "16 + 4 = 20 W is wrong here",
+            "why": "Squaring separate contributions omits the cross term in the square of their sum.",
+            "audio": "audio/c1-8c8dcd5f05a43d.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "I",
+            "current: charge flowing each second, measured in amperes (A)"
+          ],
+          [
+            "P",
+            "power: energy transferred each second, measured in watts (W)"
+          ],
+          [
+            "R",
+            "resistance of the resistor whose power is wanted, in ohms (Ω)"
+          ],
+          [
+            "I²",
+            "square of the total signed current, after adding the contributions"
+          ]
+        ]
+      }
+    ]
+  },
+  "1.10": {
+    "title": "Replace the network at the load",
+    "goal": "Find the two-terminal equivalent, then reconnect only the target load.",
+    "cases": [
+      {
+        "id": "case-1",
+        "name": "Find the open voltage",
+        "rule": "Uth = Uoc at the selected load terminals.",
+        "when": "Remove only the external load; keep the remaining network intact.",
+        "figure": "bridge-open",
+        "given": "Teacher’s 8 Ω bridge load is removed between a and b.",
+        "steps": [
+          {
+            "label": "Keep the original sources active",
+            "equation": "Vₐ = 4 V",
+            "why": "The left two ohm divider gives four volts.",
+            "audio": "audio/c1-73418ccd5c0614.mp3"
+          },
+          {
+            "label": "Find the other node",
+            "equation": "Vᵦ = −10 V",
+            "why": "The right source branch and downward current source set the other terminal potential.",
+            "audio": "audio/c1-0846fc5f157f73.mp3"
+          },
+          {
+            "label": "Take the ordered difference",
+            "equation": "Uₐᵦ = 4 − (−10) = 14 V",
+            "why": "The load port lies between two non-ground nodes.",
+            "audio": "audio/c1-3e53abdd3b372b.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "Uth",
+            "Thévenin equivalent source voltage, in volts (V)"
+          ],
+          [
+            "Uoc",
+            "open-circuit voltage across the chosen terminals, in volts (V)"
+          ],
+          [
+            "Vₐ, Vᵦ",
+            "potentials of a and b relative to the common reference, in volts (V)"
+          ],
+          [
+            "Uₐᵦ",
+            "Vₐ − Vᵦ: voltage of a relative to b, in volts (V)"
+          ]
+        ]
+      },
+      {
+        "id": "case-2",
+        "name": "Find the resistance",
+        "rule": "Look into the same port with independent sources suppressed.",
+        "when": "Voltage sources become shorts; current sources become opens.",
+        "figure": "bridge-resistance",
+        "given": "Use the teacher’s load port with the 8 Ω load still removed.",
+        "steps": [
+          {
+            "label": "Suppress independent sources",
+            "equation": "Voltage → short; current → open",
+            "why": "Do not remove the surrounding resistors or the shared bottom connection.",
+            "audio": "audio/c1-a82f3d34cfa447.mp3"
+          },
+          {
+            "label": "Reduce the port resistance",
+            "equation": "Rth = (2 Ω ∥ 2 Ω) + 5 Ω",
+            "why": "The two left resistors are parallel; the right five ohms is in series as seen from a to b.",
+            "audio": "audio/c1-7f0d4fbf18189e.mp3"
+          },
+          {
+            "label": "Calculate",
+            "equation": "Rth = 1 + 5 = 6 Ω",
+            "why": "If dependent sources are present, a test source may be needed; do not zero dependent sources.",
+            "audio": "audio/c1-3dad6be5348c2c.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "Rth",
+            "resistance of the equivalent network seen from the load terminals, in ohms (Ω)"
+          ],
+          [
+            "∥",
+            "parallel combination: R₁R₂ / (R₁ + R₂)"
+          ],
+          [
+            "Independent sources suppressed",
+            "ideal voltage sources shorted; ideal current sources opened"
+          ]
+        ]
+      },
+      {
+        "id": "case-3",
+        "name": "Reconnect the load",
+        "rule": "IL = Uth / (Rth + RL).",
+        "when": "The Thévenin source is in series with its resistance and the load.",
+        "figure": "thevenin",
+        "given": "Uth = 14 V; Rth = 6 Ω; RL = 8 Ω.",
+        "steps": [
+          {
+            "label": "Build the equivalent",
+            "equation": "14 V in series with 6 Ω and 8 Ω",
+            "why": "The equivalent replaces the original network at the same port.",
+            "audio": "audio/c1-ca5fffe348c2d7.mp3"
+          },
+          {
+            "label": "Find load current",
+            "equation": "IL = 14 / (6 + 8) = 1 A",
+            "why": "The current flows from a to b for the positive open-circuit voltage reference.",
+            "audio": "audio/c1-7c7ebb2a671b68.mp3"
+          },
+          {
+            "label": "Check the load voltage",
+            "equation": "UL = 1 × 8 = 8 V",
+            "why": "The loaded voltage is eight volts, not the fourteen volt open-circuit value.",
+            "audio": "audio/c1-eb22f833ca50f9.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "IL",
+            "current through the external load, in amperes (A); subscript L means load"
+          ],
+          [
+            "Uth",
+            "Thévenin equivalent source voltage, in volts (V)"
+          ],
+          [
+            "Rth",
+            "resistance of the equivalent network seen from the load terminals, in ohms (Ω)"
+          ],
+          [
+            "RL",
+            "external load resistance, in ohms (Ω); subscript L means load"
+          ],
+          [
+            "UL",
+            "voltage across the reconnected load, in volts (V)"
+          ]
+        ]
+      },
+      {
+        "id": "case-4",
+        "name": "Use Norton instead",
+        "rule": "IN = Uth / Rth; keep Rth in parallel.",
+        "when": "The equivalent port relationship is finite and defined.",
+        "figure": "norton",
+        "given": "Convert the same 14 V, 6 Ω equivalent and keep the 8 Ω load.",
+        "steps": [
+          {
+            "label": "Convert the source",
+            "equation": "IN = 14 / 6 = 7/3 A",
+            "why": "The same six ohms becomes a parallel resistance.",
+            "audio": "audio/c1-8ece613741fff6.mp3"
+          },
+          {
+            "label": "Use current division",
+            "equation": "IL = (7/3) × 6 / (6 + 8) = 1 A",
+            "why": "Use the other branch’s resistance in the numerator.",
+            "audio": "audio/c1-bc8122475ab85a.mp3"
+          },
+          {
+            "label": "Check agreement",
+            "equation": "Thévenin and Norton: IL = 1 A",
+            "why": "Choose whichever form makes the load calculation simpler.",
+            "audio": "audio/c1-6927811763798a.mp3"
+          }
+        ],
+        "trap": "",
+        "symbols": [
+          [
+            "IN",
+            "Norton equivalent source current, in amperes (A)"
+          ],
+          [
+            "Uth",
+            "Thévenin equivalent source voltage, in volts (V)"
+          ],
+          [
+            "Rth",
+            "resistance of the equivalent network seen from the load terminals, in ohms (Ω)"
+          ],
+          [
+            "IL",
+            "current through the external load, in amperes (A); subscript L means load"
+          ],
+          [
+            "RL",
+            "external load resistance, in ohms (Ω); subscript L means load"
+          ]
+        ]
+      }
+    ]
+  }
+}

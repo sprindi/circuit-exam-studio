@@ -1,0 +1,113 @@
+{
+  "2.1": {
+    "title": "Why does a circuit take time to settle?",
+    "goal": "Recognize a transient and identify the energy-storage quantity that changes over time.",
+    "prepare": "Recall the capacitor and inductor laws from 1.5.",
+    "goals": [
+      "Tell a switching transient from the final DC steady state.",
+      "Explain the three-lamp demonstration using stored energy."
+    ],
+    "coverage": "The video explains switching and element behavior. The sheet adds your teacher’s lamp demonstration and applications; its microsecond/millisecond examples are not a universal duration limit."
+  },
+  "2.2": {
+    "title": "What stays unchanged at the switch?",
+    "goal": "Find the state immediately after switching without confusing it with the final steady state.",
+    "prepare": "Know the capacitor voltage and inductor current before the switch moves.",
+    "goals": [
+      "Read 0− and 0+ correctly.",
+      "Carry uC and iL through switching, then recalculate the other quantities."
+    ],
+    "coverage": "The video revises continuity and solves RC/RL examples. It also previews time constants from 2.3. The examples below use your teacher’s own circuits."
+  },
+  "2.3": {
+    "title": "Build the response from three values",
+    "goal": "Find the initial value, final value and time constant, then write and check the response.",
+    "prepare": "Use 2.2 switching laws and Chapter 1 equivalent resistance.",
+    "goals": [
+      "Find f(0+), f(∞) and τ from the appropriate circuit.",
+      "Use the exponential only when the circuit is first order with fixed DC excitation."
+    ],
+    "coverage": "The video derives RC/RL responses and the final + (initial − final) shortcut. The sheet keeps the additional initial-value circuits, final-value examples and unit corrections taught in your course."
+  },
+  "2.4": {
+    "title": "Charge, discharge or change destination?",
+    "goal": "Choose the correct RC response and keep the current sign consistent.",
+    "prepare": "Find the three values in 2.3; use iC = C duC/dt.",
+    "goals": [
+      "Distinguish zero-state, zero-input and complete response.",
+      "Write both capacitor voltage and current; calculate a threshold time."
+    ],
+    "coverage": "The video explains RC charging, discharging, τ and a threshold calculation. The sheet adds the teacher’s source-to-source complete response and the passive-reference current sign."
+  },
+  "2.5": {
+    "title": "Let an inductor release its energy",
+    "goal": "Find the RL decay path, preserve initial current, and explain the voltage sign.",
+    "prepare": "Use 2.2 continuity and the resistance seen after switching.",
+    "goals": [
+      "Find the teacher’s 2 A initial current and 0.5 s time constant.",
+      "Explain why the current can be positive while the passive voltage is negative."
+    ],
+    "coverage": "The video covers RL buildup, decay and time constants. It sometimes describes induced EMF or loop traversal drops as negative. Your course’s passive terminal voltage is uL = +L diL/dt; induced EMF is eL = −L diL/dt. Use the marked reference, not the word “voltage” alone."
+  },
+  "3.1": {
+    "title": "Read a sine wave before calculating",
+    "goal": "Identify amplitude, frequency and phase, and distinguish peak from RMS.",
+    "prepare": "Use units, basic angles and resistor power from Chapter 1.",
+    "goals": [
+      "Read Im, ω and ψ in i(t).",
+      "Convert peak ↔ RMS and determine which waveform leads."
+    ],
+    "coverage": "The video covers AC/DC and sine-wave RMS calculations. Its power examples assume sinusoidal in-phase voltage/current; for a general load, use P = UI cosφ in 3.6. The sheet adds your teacher’s frequency and phase material."
+  },
+  "3.2": {
+    "title": "Turn sine waves into numbers you can add",
+    "goal": "Represent same-frequency signals as phasors and calculate without losing phase or √2.",
+    "prepare": "Know 3.1 RMS values and initial phase; use basic trigonometry.",
+    "goals": [
+      "Convert rectangular ↔ polar with the correct quadrant.",
+      "Add phasors and recover the waveform using a supplied frequency."
+    ],
+    "coverage": "The video teaches rotating vectors, mathematical forms and R/L/C phase relationships. It mainly uses peak phasors. Your course calculations below use RMS phasors; the phase angles are unchanged. The sheet also includes the course’s complex-number arithmetic."
+  },
+  "3.3": {
+    "title": "Why do R, L and C shift current differently?",
+    "goal": "Use each element’s impedance and explain the 90° phase relationship.",
+    "prepare": "Use 3.2 phasors and the derivative laws from 1.5.",
+    "goals": [
+      "Write ZR, ZL and ZC with correct signs.",
+      "Distinguish phase information from RMS magnitude equations."
+    ],
+    "coverage": "Khan Academy derives each impedance from its element law using complex exponentials. Its cosine/exponential derivation gives the same impedance laws as your course’s sine reference. The sheet states the phase relationships and corrects the capacitor slide labels."
+  },
+  "3.4": {
+    "title": "Add series voltages as phasors",
+    "goal": "Find total impedance, current and section voltages without adding RMS magnitudes incorrectly.",
+    "prepare": "Know 3.2 arithmetic and 3.3 element impedances.",
+    "goals": [
+      "Use R+j(XL−XC) and interpret its angle.",
+      "Apply the complex voltage divider and verify KVL."
+    ],
+    "coverage": "The video calculates a series RLC example, reactances, current and element voltage magnitudes. It calls |Z| “impedance”; your course also requires complex Z and the impedance divider, shown below. Its final resonant-frequency calculation is extra to the reviewed lesson."
+  },
+  "3.5": {
+    "title": "Add parallel currents without losing direction",
+    "goal": "Use the common voltage, add branch-current phasors and apply complex current division.",
+    "prepare": "Know 3.2 phasor addition and 3.3 phase relationships.",
+    "goals": [
+      "Explain why three 5 A branch currents can total 5 A.",
+      "Get the same answer using branch currents or equivalent impedance."
+    ],
+    "coverage": "The video works a pure parallel RLC example and checks the vector current sum. The sheet adds your teacher’s general complex branches and current-divider examples. The final resonance calculation is optional beyond the reviewed lesson."
+  },
+  "3.6": {
+    "title": "Separate useful power from energy exchange",
+    "goal": "Distinguish instantaneous, active, reactive and apparent power, then combine loads correctly.",
+    "prepare": "Use RMS magnitudes and φ = voltage phase − current phase.",
+    "goals": [
+      "Interpret positive/negative instantaneous absorbed power.",
+      "Calculate P, signed Q, S and power factor with the correct units.",
+      "Add P and Q before finding the total S."
+    ],
+    "coverage": "The first video revisits instantaneous power and derives average power; the second introduces apparent power and power factor. The sheet adds your teacher’s signed reactive power, pure-element cases and addition rules. Capacitor sizing is not part of this reviewed lesson. The videos use peak phasors for some derivations and cosine waveforms; use the RMS factors and consistent sine reference stated below."
+  }
+}

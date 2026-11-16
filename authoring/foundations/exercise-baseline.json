@@ -1,0 +1,176 @@
+{
+  "scope": "Chapter 1 teaching rebuild; exercise contents and behavior frozen",
+  "files": {
+    "data.js": "77419f741926144250a9a69eb3e78adb48ec200e29aa49a89818aa133e2f9fbe",
+    "content.js": "5d53e57e6e50ab3d823643bc6c91e07683f72d4088935513c34bc427a2ed3cc4",
+    "app.js": "1e506020fb897ea95a08db0186026d516b92aa22803e0410f3bb59e7e8540677",
+    "chapter-one.js": "670bea71895881ed849c22b7b9bf863045941a945d6c58278b4c57d514d079e7",
+    "chapter-one-data.js": "0ad850dcafb7dc75bc028aeaff5b8c883d1a7c5cbedb3d25e17c185b65a44c02",
+    "chapter-one-figures.js": "8b4f591b69adc59729d3f6c7503a671d5b68b2e92841a9b7e301e87e70faab70",
+    "study-store.js": "dcbf40a051ae6a28d83d2268023ed18bfe5e787b5065cbb5100d27b52f13c602",
+    "guided-data.js": "76ca863b0d7d33685e35d95341fe7cf4e4c782dd7a9c0f42fd89cecb0b980dcb",
+    "guided.js": "12d3f4d89ee436ed1e9c7cae31979a691d0d85e967e0ac2edeff714ad6ea9df1"
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "topic": "1.1",
+      "chapter": 1,
+      "type": "choice",
+      "prompt": "A microphone → amplifier → loudspeaker system is mainly what type of circuit?",
+      "choices": [
+        "A signal circuit",
+        "A power transmission circuit",
+        "An open circuit"
+      ],
+      "answer": 0,
+      "explain": "Its primary purpose is transmitting and processing information. Both signal and power circuits consume energy."
+    },
+    {
+      "id": "q2",
+      "topic": "1.2",
+      "chapter": 1,
+      "type": "number",
+      "prompt": "A bulb takes 1.6 A at 6 V. Find its power.",
+      "value": 9.6,
+      "unit": "W",
+      "explain": "P = UI = 6 × 1.6 = 9.6 W. Power is an energy-transfer rate."
+    },
+    {
+      "id": "q3",
+      "topic": "1.2",
+      "chapter": 1,
+      "type": "number",
+      "prompt": "A bulb takes 10 mA at 2 V for 30 minutes. Find its energy use in joules.",
+      "value": 36,
+      "unit": "J",
+      "explain": "Convert: I = 0.010 A and t = 1800 s. W = UIt = 2 × 0.010 × 1800 = 36 J."
+    },
+    {
+      "id": "q4",
+      "topic": "1.3",
+      "chapter": 1,
+      "type": "number",
+      "prompt": "Us = 125 V, terminal U = 115 V, I = 4 A. Find the source’s internal resistance.",
+      "value": 2.5,
+      "unit": "Ω",
+      "explain": "R₀ = (Us − U)/I = (125−115)/4 = 2.5 Ω. Internal loss is 40 W."
+    },
+    {
+      "id": "q5",
+      "topic": "1.3",
+      "chapter": 1,
+      "type": "choice",
+      "prompt": "Across an ideal short circuit, which statement must hold?",
+      "choices": [
+        "Voltage is zero; current depends on the rest of the circuit",
+        "Current is zero; voltage can be anything",
+        "Both voltage and current must be zero"
+      ],
+      "answer": 0,
+      "explain": "An ideal short fixes U = 0, not I = 0. Its current is determined by the connected network."
+    },
+    {
+      "id": "q6",
+      "topic": "1.4",
+      "chapter": 1,
+      "type": "number",
+      "prompt": "Two equal series resistors connect nodes at +12 V and −10 V. Find the midpoint potential.",
+      "value": 1,
+      "unit": "V",
+      "explain": "Equal resistors divide the 22 V difference equally. Vmid = −10 + 11 = 1 V."
+    },
+    {
+      "id": "q7",
+      "topic": "1.5",
+      "chapter": 1,
+      "type": "choice",
+      "prompt": "A source has 3 V positive at its top terminal. 3 A enters that positive terminal. What does it do?",
+      "choices": [
+        "Absorbs 9 W",
+        "Supplies 9 W",
+        "Transfers zero power"
+      ],
+      "answer": 0,
+      "explain": "The passive convention gives Pabs = UI = +9 W. A device called a source can still absorb power."
+    },
+    {
+      "id": "q8",
+      "topic": "1.6",
+      "chapter": 1,
+      "type": "number",
+      "prompt": "Transform a 10 V ideal source with 2 Ω in series into a practical current source. Find Is.",
+      "value": 5,
+      "unit": "A",
+      "explain": "Is = Us/R = 10/2 = 5 A. Keep 2 Ω, but connect it in parallel."
+    },
+    {
+      "id": "q9",
+      "topic": "1.6",
+      "chapter": 1,
+      "type": "number",
+      "prompt": "40 V + 2 Ω and 20 V + 2 Ω branches feed a parallel 4 Ω load. Find the load current.",
+      "value": 6,
+      "unit": "A",
+      "explain": "Transform to 20 A and 10 A in parallel. Rinternal = 2||2 = 1 Ω. Iload = 30 × 1/(1+4) = 6 A."
+    },
+    {
+      "id": "q10",
+      "topic": "1.7",
+      "chapter": 1,
+      "type": "choice",
+      "prompt": "A connected network has 3 essential nodes and 5 branches. How many independent KCL and loop equations?",
+      "choices": [
+        "2 KCL and 3 loop equations",
+        "3 KCL and 5 loop equations",
+        "2 KCL and 2 loop equations"
+      ],
+      "answer": 0,
+      "explain": "n−1 = 2 independent KCL equations; b−n+1 = 3 independent loop equations."
+    },
+    {
+      "id": "q11",
+      "topic": "1.8",
+      "chapter": 1,
+      "type": "number",
+      "prompt": "At a node, I₁ = I₃ + I₅. If I₁ = 5 A and I₃ = 2 A, find I₅.",
+      "value": 3,
+      "unit": "A",
+      "explain": "KCL: I₅ = 5 − 2 = 3 A in the assigned outgoing direction."
+    },
+    {
+      "id": "q12",
+      "topic": "1.9",
+      "chapter": 1,
+      "type": "choice",
+      "prompt": "When finding one source’s superposition contribution, how do you suppress another independent ideal current source?",
+      "choices": [
+        "Replace it by an open circuit",
+        "Replace it by a short circuit",
+        "Remove every resistor in its branch"
+      ],
+      "answer": 0,
+      "explain": "Set its current to zero: an open circuit. Inactive ideal voltage sources instead become shorts. Preserve resistors."
+    },
+    {
+      "id": "q13",
+      "topic": "1.9",
+      "chapter": 1,
+      "type": "number",
+      "prompt": "Two signed source contributions to a branch current are +2 A and −1 A. Find the total.",
+      "value": 1,
+      "unit": "A",
+      "explain": "Add algebraically: I = 2 + (−1) = 1 A. Do not add the magnitudes."
+    },
+    {
+      "id": "q14",
+      "topic": "1.10",
+      "chapter": 1,
+      "type": "number",
+      "prompt": "For the course’s bridge load, Uth = 14 V and Rth = 6 Ω. Reconnect an 8 Ω load. Find IL.",
+      "value": 1,
+      "unit": "A",
+      "explain": "IL = Uth/(Rth+RL) = 14/(6+8) = 1 A. Rth is in series with the load."
+    }
+  ]
+}

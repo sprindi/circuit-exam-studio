@@ -1,0 +1,1693 @@
+{
+  "introduction": {
+    "title": "Circuit function and components",
+    "definitions": [
+      [
+        "Physical circuit / model",
+        "Real devices are replaced by ideal elements and their connections for the calculation you need."
+      ],
+      [
+        "Source",
+        "Converts another form of energy to electrical energy, or provides a signal."
+      ],
+      [
+        "Load",
+        "Receives energy and converts it to light, heat, motion or another useful output."
+      ],
+      [
+        "Intermediate link",
+        "Wires, switches, contacts, control and protective devices connect the parts."
+      ],
+      [
+        "Power circuit",
+        "Main purpose: generate, transmit or convert energy. Example: battery and lamp."
+      ],
+      [
+        "Signal circuit",
+        "Main purpose: transmit or process information. Example: microphone → amplifier → loudspeaker, or temperature measurement."
+      ],
+      [
+        "Active / passive network",
+        "In this course’s introductory terminology: contains a source / contains no source. A two-terminal network connects through two terminals."
+      ],
+      [
+        "DC / AC",
+        "The introductory DC model is constant. AC reverses direction or polarity; sinusoidal AC follows a sine wave."
+      ]
+    ],
+    "rules": [
+      [
+        "Closed conducting path → sustained current",
+        "Opening the path stops the steady current in the simple battery–switch–lamp circuit."
+      ],
+      [
+        "More load = more power consumption",
+        "At fixed supply voltage, greater power demand requires greater current; it does not mean greater resistance."
+      ]
+    ],
+    "symbols": [],
+    "examples": [
+      "Torch: battery = source; bulb = load; switch and contacts = intermediate link."
+    ],
+    "traps": [
+      "The load converts energy; it does not consume the circulating charge.",
+      "A signal circuit still requires energy. Classify its principal purpose."
+    ]
+  },
+  "basics": {
+    "title": "Current, potential, voltage, power and energy",
+    "definitions": [
+      [
+        "Current",
+        "Charge crossing a section each second, not the speed of an individual electron. Conventional direction follows positive-charge motion."
+      ],
+      [
+        "Potential / voltage",
+        "Potential uses a chosen zero node. Voltage compares two specified points in a specified order."
+      ],
+      [
+        "Power / energy",
+        "Power is energy per second. Energy also depends on how long the transfer lasts."
+      ]
+    ],
+    "rules": [
+      [
+        "I = Q/t; i = dq/dt",
+        "Q/t is steady current, or average current over the interval. dq/dt gives instantaneous current."
+      ],
+      [
+        "Uab = Va − Vb",
+        "Use node potentials measured against the same reference."
+      ],
+      [
+        "P = UI",
+        "Positive absorbed power uses current entering the marked positive terminal."
+      ],
+      [
+        "W = Pt = UIt",
+        "Use constant power, voltage and current over the stated interval. Use seconds and amperes for joules."
+      ],
+      [
+        "1 kWh = 3.6 × 10⁶ J",
+        "kW measures power; kWh measures energy."
+      ]
+    ],
+    "symbols": [
+      [
+        "I or i",
+        "Current, amperes (A = C/s)."
+      ],
+      [
+        "Q or q",
+        "Charge crossing the section, coulombs (C)."
+      ],
+      [
+        "t; dq/dt",
+        "Time in seconds; charge’s rate of change, C/s."
+      ],
+      [
+        "Uab; Va, Vb",
+        "Ordered voltage difference; node potentials, all in volts (V = J/C)."
+      ],
+      [
+        "P",
+        "Power, watts (W = J/s)."
+      ],
+      [
+        "W",
+        "Energy, joules (J). Here W is a quantity symbol; W after a number is the watt unit."
+      ]
+    ],
+    "examples": [
+      "6 C in 3 s → I = 2 A. A 6 V bulb taking 1.6 A absorbs 9.6 W.",
+      "2 V × 10 mA × 30 min: convert to 0.010 A and 1800 s → 36 J.",
+      "Teacher’s 10 V / two 2 Ω circuit: I = 2.5 A. With c = 0: Va = 10 V, Vb = 5 V. With a = 0: Va = 0, Vb = −5 V, Vc = −10 V. Uab stays 5 V."
+    ],
+    "traps": [
+      "Changing ground shifts potentials, not physical voltage differences.",
+      "Convert mA to A and minutes to seconds before calculating energy."
+    ]
+  },
+  "emf": {
+    "title": "EMF and terminal voltage",
+    "definitions": [
+      [
+        "EMF, Us or E",
+        "Energy supplied per coulomb by the source’s non-electric energy-conversion process. It is measured in volts, not newtons."
+      ],
+      [
+        "EMF direction",
+        "Through the ideal source from − toward +: source action raises energy per positive charge."
+      ],
+      [
+        "Terminal voltage, U",
+        "The potential difference measured across the source’s actual output terminals."
+      ],
+      [
+        "Internal resistance, R₀",
+        "Models internal voltage drop and heating while the source delivers current."
+      ]
+    ],
+    "rules": [
+      [
+        "U = Us − IR₀",
+        "For the practical source while current leaves its positive output terminal."
+      ],
+      [
+        "I = 0 → U = Us",
+        "Open output: no current-dependent internal drop."
+      ],
+      [
+        "R₀ = 0 → U = Us",
+        "An ideal voltage source keeps its prescribed voltage while delivering current too."
+      ]
+    ],
+    "symbols": [
+      [
+        "Us or E",
+        "EMF, volts (J/C)."
+      ],
+      [
+        "U",
+        "Output voltage, volts (V)."
+      ],
+      [
+        "I",
+        "Delivered current, amperes (A)."
+      ],
+      [
+        "R₀",
+        "Internal resistance, ohms (Ω); 0 labels the internal part."
+      ],
+      [
+        "IR₀",
+        "Internal voltage drop, volts (V)."
+      ]
+    ],
+    "examples": [
+      "12 V EMF, internal 2 Ω and load 4 Ω → I = 2 A; internal drop = 4 V; output = 8 V.",
+      "Energy account per coulomb: 12 J supplied = 4 J internal heat + 8 J delivered outside."
+    ],
+    "traps": [
+      "EMF, terminal voltage and node potential share a unit but describe different ideas.",
+      "Conventional external current runs from the positive output through the load toward the negative output. Do not confuse this with the EMF arrow.",
+      "The subtraction relation assumes delivery. Current pushed into the positive terminal changes the signed relation."
+    ]
+  },
+  "conditions": {
+    "title": "Loaded, open and shorted sources",
+    "definitions": [
+      [
+        "Loaded",
+        "A finite load completes the output path."
+      ],
+      [
+        "Open",
+        "The external path is broken: branch current is zero; voltage may remain."
+      ],
+      [
+        "Ideal short",
+        "Output terminals are directly joined: their voltage difference is zero; current may remain."
+      ]
+    ],
+    "rules": [
+      [
+        "I = Us/(R₀ + R); U = IR = Us − IR₀",
+        "Loaded source; keep the internal and external resistances distinct."
+      ],
+      [
+        "I = 0; Uoc = Us; Pload = 0",
+        "Open output of this source model."
+      ],
+      [
+        "Isc = Us/R₀; U = 0",
+        "Shorted output, assuming nonzero internal resistance."
+      ],
+      [
+        "Psource = UsI; Pload = UI; Ploss = I²R₀",
+        "Source conversion = delivered load power + internal heat."
+      ],
+      [
+        "R₀ = (Us − U)/I",
+        "Infer internal resistance from loaded measurements with nonzero current."
+      ]
+    ],
+    "symbols": [
+      [
+        "Us; U; Uoc",
+        "EMF; terminal voltage; open-circuit terminal voltage, all volts (V)."
+      ],
+      [
+        "I; Isc",
+        "Loaded current; short-circuit current, amperes (A)."
+      ],
+      [
+        "R₀; R",
+        "Internal resistance; external load resistance, ohms (Ω)."
+      ],
+      [
+        "Psource; Pload; Ploss",
+        "Source conversion, delivered power and internal heat, watts (W)."
+      ]
+    ],
+    "examples": [
+      "Teacher: Us = 125 V, U = 115 V, I = 4 A → R₀ = 2.5 Ω; 500 W supplied = 460 W delivered + 40 W internal heat.",
+      "12 V, R₀ = 2 Ω: an open gives 0 A and 12 V. A short gives 6 A and 0 V, with 72 W of internal heat."
+    ],
+    "traps": [
+      "Zero terminal power during a short does not mean zero internal heating.",
+      "An ideal nonzero voltage source with zero internal resistance across an ideal short has no finite-current solution.",
+      "The teacher’s 125 V / 115 V example describes a loaded source, despite the reused shorting-line drawing."
+    ]
+  },
+  "signs": {
+    "title": "References and signed answers",
+    "definitions": [
+      [
+        "Reference node",
+        "The node assigned zero potential. It need not be physical earth."
+      ],
+      [
+        "Current reference",
+        "An assigned arrow; a negative calculated current flows opposite that arrow."
+      ],
+      [
+        "Voltage reference",
+        "Ordered subscripts or +/− marks identify the difference being calculated. The course voltage arrow runs from referenced + to referenced −."
+      ]
+    ],
+    "rules": [
+      [
+        "Uab = Va − Vb; Uba = −Uab",
+        "Keep the node identities fixed when reversing the voltage reference."
+      ],
+      [
+        "U = RI",
+        "Resistor current reference enters its marked positive terminal."
+      ],
+      [
+        "U = −RI",
+        "Current reference is reversed while the voltage reference is retained."
+      ]
+    ],
+    "symbols": [
+      [
+        "Va, Vb; Uab, Uba",
+        "Potentials and ordered voltage differences, volts (V)."
+      ],
+      [
+        "I",
+        "Signed current, amperes (A)."
+      ],
+      [
+        "R",
+        "Resistance, ohms (Ω)."
+      ]
+    ],
+    "examples": [
+      "Teacher: 10 V with 4 Ω + 3 Ω + 3 Ω → I = 1 A. With bottom d grounded: Va = 10 V, Vb = 6 V, Vc = 3 V.",
+      "Teacher midpoint between +12 V and −10 V through equal resistors: Vmid = −10 + (12 − (−10))/2 = 1 V."
+    ],
+    "traps": [
+      "Choose references before calculating. Do not silently flip an arrow halfway through.",
+      "A negative result changes the interpretation relative to your reference, not the physical node labels."
+    ]
+  },
+  "sources": {
+    "title": "Ideal sources and supplied/absorbed power",
+    "definitions": [
+      [
+        "Ideal voltage source",
+        "Fixes its prescribed voltage; the connected circuit determines its current."
+      ],
+      [
+        "Ideal current source",
+        "Fixes its prescribed current; the connected circuit determines its voltage."
+      ],
+      [
+        "Absorbed / supplied power",
+        "Use the actual signed voltage/current references. A device named “source” can absorb energy."
+      ]
+    ],
+    "rules": [
+      [
+        "Pabs = UI",
+        "Current reference enters the marked + terminal. Positive means absorption; negative means supply."
+      ],
+      [
+        "Psupplied = −Pabs",
+        "The same transfer described as power supplied rather than absorbed."
+      ]
+    ],
+    "symbols": [
+      [
+        "U; I",
+        "Signed voltage in volts and current in amperes."
+      ],
+      [
+        "Pabs; Psupplied",
+        "Absorbed and supplied power, watts (W)."
+      ]
+    ],
+    "examples": [
+      "10 V source: one 2 Ω load takes 5 A; two such loads in parallel take 10 A total. Voltage stays 10 V.",
+      "1 A current source: output is 1 V across 1 Ω, and 10 V across 10 Ω. Current stays 1 A.",
+      "Teacher table below: upward 3 A current source and 3 V voltage source with + at the top. Negative absorption means delivery."
+    ],
+    "traps": [
+      "The word “source” does not determine its power sign.",
+      "Check that total supplied power equals total absorbed power."
+    ],
+    "table": {
+      "headers": [
+        "Teacher case",
+        "Resistor absorbs",
+        "Voltage source absorbs",
+        "Current source supplies"
+      ],
+      "rows": [
+        [
+          "Sources only",
+          "—",
+          "9 W",
+          "9 W"
+        ],
+        [
+          "1 Ω in parallel",
+          "9 W",
+          "0 W",
+          "9 W"
+        ],
+        [
+          "0.5 Ω in parallel",
+          "18 W",
+          "−9 W",
+          "9 W"
+        ],
+        [
+          "2 Ω in parallel",
+          "4.5 W",
+          "4.5 W",
+          "9 W"
+        ],
+        [
+          "1 Ω in series along top",
+          "9 W",
+          "9 W",
+          "18 W"
+        ]
+      ]
+    }
+  },
+  "capacitor": {
+    "title": "Capacitor law",
+    "definitions": [
+      [
+        "Capacitance",
+        "Charge stored per unit voltage. Equal and opposite charge builds on the two plates."
+      ],
+      [
+        "Physical meaning",
+        "Capacitor current depends on the rate of voltage change, not voltage alone."
+      ]
+    ],
+    "rules": [
+      [
+        "q = Cu; i = dq/dt = C du/dt",
+        "Ideal constant capacitor, using passive references: current enters the marked positive terminal."
+      ]
+    ],
+    "symbols": [
+      [
+        "q",
+        "Charge, coulombs (C)."
+      ],
+      [
+        "C",
+        "Capacitance, farads (F); do not confuse the symbol with the coulomb unit."
+      ],
+      [
+        "u",
+        "Capacitor voltage, volts (V)."
+      ],
+      [
+        "i",
+        "Capacitor current, amperes (A)."
+      ],
+      [
+        "du/dt",
+        "Voltage’s rate of change, volts per second (V/s)."
+      ]
+    ],
+    "examples": [
+      "If voltage is constant in time, du/dt = 0, so the ideal capacitor current is zero."
+    ],
+    "traps": [
+      "A capacitor may have nonzero voltage with zero steady current. Do not use i = u/R for its ideal element law."
+    ]
+  },
+  "inductor": {
+    "title": "Inductor law and opposing EMF",
+    "definitions": [
+      [
+        "Inductance",
+        "Relates voltage to the rate of change of current."
+      ],
+      [
+        "Opposing induced EMF",
+        "The induced EMF opposes the change in current; it does not simply oppose all current."
+      ]
+    ],
+    "rules": [
+      [
+        "uL = L diL/dt",
+        "Ideal constant inductor with current entering the marked positive voltage terminal."
+      ],
+      [
+        "e = −L diL/dt; uL = −e",
+        "The source’s induced-EMF reference is opposite to the passive terminal-voltage reference."
+      ]
+    ],
+    "symbols": [
+      [
+        "L",
+        "Inductance, henries (H)."
+      ],
+      [
+        "iL",
+        "Inductor current, amperes (A)."
+      ],
+      [
+        "uL; e",
+        "Terminal voltage and induced EMF, volts (V)."
+      ],
+      [
+        "diL/dt",
+        "Current’s rate of change, amperes per second (A/s)."
+      ]
+    ],
+    "examples": [
+      "Constant ideal-inductor current → diL/dt = 0 → terminal voltage is zero."
+    ],
+    "traps": [
+      "Do not attach a minus sign to the passive voltage law without checking the references.",
+      "An actual coil’s wire resistance is separate from its ideal inductance."
+    ]
+  },
+  "transformation": {
+    "title": "Practical sources and source transformation",
+    "definitions": [
+      [
+        "Practical voltage source",
+        "Ideal voltage source with series resistance."
+      ],
+      [
+        "Practical current source",
+        "Ideal current source with parallel resistance."
+      ],
+      [
+        "External equivalence",
+        "The same voltage–current relationship at the same two output terminals; internal power/currents can differ."
+      ]
+    ],
+    "rules": [
+      [
+        "U = Us − IR; Iout = Is − U/R",
+        "Output relations for supplying practical voltage/current sources."
+      ],
+      [
+        "Is = Us/R; Us = IsR",
+        "Finite nonzero R. Keep its value; series becomes parallel or vice versa."
+      ],
+      [
+        "I₁ = I R₂/(R₁ + R₂); I₂ = I R₁/(R₁ + R₂)",
+        "Two parallel resistors carrying total current I."
+      ]
+    ],
+    "symbols": [
+      [
+        "Us; U",
+        "Ideal source voltage and output voltage, volts (V)."
+      ],
+      [
+        "Is; Iout; I",
+        "Ideal current source value, output current and total current, amperes (A)."
+      ],
+      [
+        "R; R₁; R₂",
+        "Resistance values, ohms (Ω)."
+      ],
+      [
+        "I₁; I₂",
+        "Parallel branch currents, amperes (A)."
+      ]
+    ],
+    "examples": [
+      "10 V + series 2 Ω ↔ 5 A || 2 Ω. With a 3 Ω load, IL = 2 A either way.",
+      "Main course example: 5 V + 2 kΩ → 2.5 mA || 2 kΩ. Add the 2 mA source; combine shunts to 2/3 kΩ; external branch is 3 kΩ. IL = 9/11 mA ≈ 0.818 mA downward.",
+      "Final review: 40 V + 2 Ω and 20 V + 2 Ω parallel branches → 30 A || 1 Ω. With 4 Ω load: IL = 6 A and U = 24 V."
+    ],
+    "traps": [
+      "Current-source arrow points toward the voltage source’s positive output terminal.",
+      "Do not transform an isolated ideal source into a finite opposite-type equivalent.",
+      "A resistor parallel to an ideal voltage source, or series with an ideal current source, can be omitted for some external calculations—not for its internal power."
+    ]
+  },
+  "topology": {
+    "title": "Nodes, branches, loops and meshes",
+    "definitions": [
+      [
+        "Essential node",
+        "The teacher’s junction where three or more elements meet. A connected unbroken conductor is one node."
+      ],
+      [
+        "Branch",
+        "Current path between essential nodes; it may contain multiple series elements."
+      ],
+      [
+        "Loop",
+        "A closed path."
+      ],
+      [
+        "Mesh",
+        "A planar loop with no smaller loop inside it. A suitable set gives independent loop equations."
+      ]
+    ],
+    "rules": [
+      [
+        "Independent KCL equations = n − 1",
+        "For a connected circuit graph, using consistent node/branch definitions."
+      ],
+      [
+        "Independent loop equations = b − n + 1",
+        "Do not count every possible closed path as a new independent equation."
+      ]
+    ],
+    "symbols": [
+      [
+        "n",
+        "Number of nodes in the chosen graph."
+      ],
+      [
+        "b",
+        "Number of branches in the same graph."
+      ]
+    ],
+    "examples": [
+      "Teacher’s five-branch example: n = 3, b = 5 → two independent KCL and three independent loop equations."
+    ],
+    "traps": [
+      "Some videos count ordinary two-element junctions as nodes. Follow your teacher’s essential-node/branch convention in the counting questions."
+    ],
+    "table": {
+      "headers": [
+        "Teacher example",
+        "Nodes",
+        "Branches",
+        "All loops",
+        "Meshes"
+      ],
+      "rows": [
+        [
+          "Three parallel paths",
+          "2",
+          "3",
+          "3",
+          "2"
+        ],
+        [
+          "Four parallel paths",
+          "2",
+          "4",
+          "6",
+          "3"
+        ],
+        [
+          "Bridge",
+          "4",
+          "6",
+          "7",
+          "3"
+        ],
+        [
+          "Five-branch network",
+          "3",
+          "5",
+          "6",
+          "3"
+        ]
+      ]
+    }
+  },
+  "kirchhoff": {
+    "title": "KCL and KVL",
+    "definitions": [
+      [
+        "KCL: charge balance",
+        "Currents crossing a node or closed boundary balance. Internal currents cancel for a boundary around multiple components."
+      ],
+      [
+        "KVL: voltage balance",
+        "Signed voltage changes around a closed path sum to zero."
+      ],
+      [
+        "Traversal signs",
+        "Moving from − to + is a voltage rise; moving from + to − is a voltage drop."
+      ]
+    ],
+    "rules": [
+      [
+        "ΣIenter = ΣIleave; Σi = 0",
+        "Choose entering/leaving signs consistently."
+      ],
+      [
+        "ΣΔu = 0",
+        "Follow one closed path in one chosen direction. Reversing traversal reverses every term."
+      ],
+      [
+        "U = Us + RI / U = Us − RI",
+        "For the source-plus-series-resistor branch: current enters its positive output terminal / leaves it."
+      ]
+    ],
+    "symbols": [
+      [
+        "I or i",
+        "Signed branch currents, amperes (A)."
+      ],
+      [
+        "u; U; Us",
+        "Signed voltage change, terminal voltage and source voltage, volts (V)."
+      ],
+      [
+        "R",
+        "Resistance, ohms (Ω)."
+      ],
+      [
+        "Σ",
+        "Sum of the signed terms."
+      ]
+    ],
+    "examples": [
+      "Teacher node: I₁ + I₃ = I₂ + I₄ + I₅. Generalised boundary examples: I₁ + I₂ = I₃, or I₁ + I₂ = I₃ = I₄ + I₅.",
+      "Teacher rectangle: U₁ − U₂ + U₃ − U₄ = 0. Opposing-source loop: Us₂ + R₂I₂ + R₁I₁ − Us₁ = 0."
+    ],
+    "traps": [
+      "KCL and KVL do not require linear elements; superposition does.",
+      "An imaginary closing path can include the unknown voltage between two terminals.",
+      "Do not change current references merely because you reverse the loop traversal."
+    ]
+  },
+  "branch-analysis": {
+    "title": "Branch-current equation setup",
+    "definitions": [
+      [
+        "Unknowns",
+        "Assign one reference current to each branch. Write independent node and loop equations, then interpret the signs."
+      ],
+      [
+        "Teacher’s directions",
+        "I₁ and I₂ arrive upward in the source branches; I₃ and I₄ flow downward; I₅ flows from top-left node a to top-right node b. Bottom conductor is common."
+      ]
+    ],
+    "rules": [
+      [
+        "I₁ − I₃ − I₅ = 0; I₅ + I₂ − I₄ = 0",
+        "Two independent KCL equations at nodes a and b."
+      ],
+      [
+        "I₃R₃ + I₁R₁ − Us₁ = 0",
+        "Left loop."
+      ],
+      [
+        "I₅R₅ + I₄R₄ − I₃R₃ = 0",
+        "Middle loop."
+      ],
+      [
+        "Us₂ − I₂R₂ − I₄R₄ = 0",
+        "Right loop."
+      ]
+    ],
+    "symbols": [
+      [
+        "I₁ … I₅",
+        "Five signed branch currents, amperes (A)."
+      ],
+      [
+        "R₁ … R₅",
+        "Resistances in the corresponding branches, ohms (Ω)."
+      ],
+      [
+        "Us₁; Us₂",
+        "Source voltages, volts (V)."
+      ]
+    ],
+    "examples": [
+      "n = 3 and b = 5 → 2 independent KCL + 3 independent loop equations = 5 equations for 5 currents.",
+      "The teacher gives symbolic component values here. Setting up this equation system is the intended result; do not invent numerical currents."
+    ],
+    "traps": [
+      "The bottom-node equation follows from the other two and adds no independent information.",
+      "A negative solution means current flows opposite its assigned arrow. A mesh-current unknown is not automatically a branch-current unknown."
+    ]
+  },
+  "superposition": {
+    "title": "Source-by-source contributions",
+    "definitions": [
+      [
+        "Superposition",
+        "In a linear circuit, add the signed voltage/current responses from independent sources acting separately."
+      ],
+      [
+        "Suppress a source",
+        "Set its prescribed value to zero: ideal voltage source → short; ideal current source → open. Retain resistances."
+      ],
+      [
+        "Dependent sources",
+        "Stay active if present. The current course examples use independent sources."
+      ]
+    ],
+    "rules": [
+      [
+        "I = I₁ + I₂ + …; U = U₁ + U₂ + …",
+        "Use the same reference for every contribution. Sources may also be considered in groups."
+      ],
+      [
+        "P = R(I₁ + I₂ + …)²",
+        "Calculate power from the final total current; do not add separate-source powers."
+      ]
+    ],
+    "symbols": [
+      [
+        "I₁, I₂; U₁, U₂",
+        "Signed individual contributions, amperes / volts."
+      ],
+      [
+        "I; U",
+        "Total branch current / voltage."
+      ],
+      [
+        "R; P",
+        "Resistance in ohms; dissipated power in watts."
+      ]
+    ],
+    "examples": [
+      "Course E2: +2 A + (−1 A) = 1 A downward. E3: 3 A + 5 A = 8 A rightward.",
+      "Course E4: marked bottom leftward current = 6.2 A. E5: 18 V and 9 V branches contribute 2 A + 1 A = 3 A downward through 4 Ω.",
+      "For the first two-source example, calculate and add each branch’s two signed contributions separately. Use the retained teacher diagrams for each circuit."
+    ],
+    "traps": [
+      "Superposition is a linear-circuit method. Power is not a linear response.",
+      "Suppress only the source being turned off—not its internal resistance or an entire branch."
+    ]
+  },
+  "thevenin": {
+    "title": "Thévenin equivalent at the load port",
+    "definitions": [
+      [
+        "Load port",
+        "The two terminals where the external load attaches. Neither terminal has to be ground."
+      ],
+      [
+        "Thévenin equivalent",
+        "A voltage source in series with a resistance having the same external terminal relationship."
+      ]
+    ],
+    "rules": [
+      [
+        "Uth = Uoc = Va − Vb",
+        "Remove only the load and find the open-circuit voltage at its port."
+      ],
+      [
+        "Rth = resistance seen into the port",
+        "Suppress independent voltage sources to shorts and independent current sources to opens. Keep resistors."
+      ],
+      [
+        "IL = Uth/(Rth + RL)",
+        "Reconnect the load in series with the equivalent resistance."
+      ]
+    ],
+    "symbols": [
+      [
+        "Uth; Uoc; Va; Vb",
+        "Equivalent voltage, open-circuit voltage and node potentials, volts (V)."
+      ],
+      [
+        "Rth; RL",
+        "Equivalent resistance and load resistance, ohms (Ω). The course also labels equivalent resistance R₀."
+      ],
+      [
+        "IL",
+        "Current through the reconnected load, amperes (A)."
+      ]
+    ],
+    "examples": [
+      "Teacher 8 Ω bridge load: Va = 4 V, Vb = −10 V → Uth = 14 V.",
+      "Rth = (2 Ω || 2 Ω) + 5 Ω = 6 Ω. Reconnect RL = 8 Ω → IL = 14/(6+8) = 1 A from a to b."
+    ],
+    "traps": [
+      "Remove only the chosen load; preserve the rest of the network and its connections.",
+      "Dependent sources stay active. A test source may be needed in problems containing them."
+    ]
+  },
+  "norton": {
+    "title": "Norton equivalent and the same load result",
+    "definitions": [
+      [
+        "Norton equivalent",
+        "A current source in parallel with an equivalent resistance."
+      ],
+      [
+        "Short-circuit current",
+        "The current through an ideal short across the selected load port, with the load removed."
+      ]
+    ],
+    "rules": [
+      [
+        "IN = Isc; RN = Rth",
+        "Find the short-circuit current and the same equivalent resistance as Thévenin."
+      ],
+      [
+        "Rth = Uoc/Isc",
+        "Only when this ratio is defined and finite."
+      ],
+      [
+        "IL = IN RN/(RN + RL)",
+        "Two parallel branches: RN and the external load RL."
+      ],
+      [
+        "Uth = IN RN",
+        "Convert between the finite practical source equivalents."
+      ]
+    ],
+    "symbols": [
+      [
+        "IN; Isc; IL",
+        "Norton, port short-circuit and load currents, amperes (A)."
+      ],
+      [
+        "RN; Rth; RL",
+        "Norton, Thévenin and external load resistances, ohms (Ω)."
+      ],
+      [
+        "Uoc; Uth",
+        "Port open-circuit and Thévenin voltages, volts (V)."
+      ]
+    ],
+    "examples": [
+      "Same teacher bridge: IN = 14/6 A = 7/3 A, in parallel with 6 Ω.",
+      "With the 8 Ω load: IL = (7/3) × 6/(6+8) = 1 A. It must agree with the Thévenin result."
+    ],
+    "traps": [
+      "The current-source arrow points toward the positive output terminal of its voltage-source equivalent.",
+      "In the two-branch current-divider expression, the numerator uses RN, not RL."
+    ]
+  },
+  "transient-intro": {
+    "title": "Switching, stored energy and settling",
+    "definitions": [
+      [
+        "Transient",
+        "The changing interval after a disturbance, as the circuit moves toward a new operating state. Its duration depends on the circuit."
+      ],
+      [
+        "DC steady state",
+        "After settling under constant sources, currents and voltages are constant. AC steady state can be periodic."
+      ],
+      [
+        "Switching",
+        "A change in connections, component values or the supply. A transient occurs when the stored state must change."
+      ]
+    ],
+    "rules": [
+      [
+        "Wₑ = ½CuC²; Wₘ = ½LiL²",
+        "A capacitor stores electric-field energy; an inductor stores magnetic-field energy. Ordinary finite switching cannot instantly change uC or iL."
+      ],
+      [
+        "iC = C duC/dt; uL = L diL/dt",
+        "Changing capacitor voltage requires current; changing inductor current requires voltage, using passive references."
+      ]
+    ],
+    "symbols": [
+      [
+        "C; L",
+        "Capacitance in farads (F); inductance in henries (H)."
+      ],
+      [
+        "uC; iL",
+        "Voltage across the capacitor (V); current through the inductor (A). C and L label the element."
+      ],
+      [
+        "Wₑ; Wₘ",
+        "Electric-field and magnetic-field stored energy, joules (J)."
+      ],
+      [
+        "d/dt",
+        "Rate of change with time; t is in seconds."
+      ],
+      [
+        "iC; uL",
+        "Capacitor current (A); inductor voltage (V)."
+      ],
+      [
+        "Us; R; RC / RL",
+        "Source voltage (V), resistance (Ω); resistor–capacitor / resistor–inductor circuits."
+      ]
+    ],
+    "examples": [
+      "Teacher’s lamps: a resistor-branch lamp lights immediately; an inductor-branch lamp brightens gradually; a capacitor-branch lamp flashes then fades as charging current falls.",
+      "Initially empty simple RC: uC starts at 0 and approaches Us. Initially empty simple RL: iL starts at 0 and approaches Us/R.",
+      "Course applications: RC threshold delay, inductive spark/ignition and fluorescent-lamp starting. Stored energy can produce a large voltage when an inductive current path is interrupted."
+    ],
+    "traps": [
+      "A resistor stores no field energy in this ideal model. Its algebraic voltage/current may change immediately.",
+      "A switch action with no change required in the stored state can produce no nontrivial transient.",
+      "The continuity statements assume ordinary finite excitation, not imposed ideal impulses."
+    ]
+  },
+  "switching": {
+    "title": "Initial conditions and the switching laws",
+    "definitions": [
+      [
+        "0− / 0+",
+        "Immediately before / immediately after the switching event at t = 0. These are two limits at the same event."
+      ],
+      [
+        "Continuity",
+        "Capacitor voltage and inductor current keep their values across an ordinary finite switching event. They may change continuously afterward."
+      ]
+    ],
+    "rules": [
+      [
+        "uC(0+) = uC(0−); iL(0+) = iL(0−)",
+        "First solve the old circuit. Carry these two stored-state quantities into the new circuit."
+      ],
+      [
+        "DC steady state: iC = 0; uL = 0",
+        "Replace an ideal capacitor with an open and an ideal inductor with a short only for a settled DC circuit."
+      ],
+      [
+        "At 0+: C → known voltage constraint; L → known current constraint",
+        "Use their initial values and solve the new connections with KCL/KVL. Only a zero initial capacitor voltage permits a momentary short; only zero initial inductor current permits a momentary open."
+      ]
+    ],
+    "symbols": [
+      [
+        "uC; iL",
+        "Capacitor voltage (V); inductor current (A). C and L are element labels."
+      ],
+      [
+        "iC; uL",
+        "Capacitor current (A); inductor voltage (V). These can jump at switching."
+      ],
+      [
+        "KCL / KVL",
+        "Kirchhoff’s current law / Kirchhoff’s voltage law, from Chapter 1."
+      ],
+      [
+        "DC",
+        "Direct current; here the settled constant-source condition."
+      ]
+    ],
+    "examples": [
+      "Teacher E1: L becomes a short and C an open in DC steady state. Two 2 Ω branches give 1 Ω; the 6 V supply sees 2 + 1 = 3 Ω, so total current is 2 A. Each conducting branch takes 1 A and uC = 2 V.",
+      "Teacher bypass example: before switching, iL = 6/(2k + 2k) = 1.5 mA and uC = 3 V. Immediately afterward those same values remain, even though the node fed directly by the source becomes 6 V.",
+      "Teacher initially unenergized network: uC(0+) = 0 and iL(0+) = 0. The capacitor holds its parallel node at 0 V at that instant; the feed current is 6/R and flows into C."
+    ],
+    "traps": [
+      "Do not carry every old current or voltage unchanged. Only the storage-state continuity constraints apply.",
+      "Do not use C = open and L = short automatically at 0+.",
+      "A circuit containing both L and C may need a higher-order full response even though both switching laws still hold."
+    ]
+  },
+  "three-values": {
+    "title": "The three-element method",
+    "definitions": [
+      [
+        "First-order circuit",
+        "One independent storage state, or an equivalent single storage element, with a first-order differential equation."
+      ],
+      [
+        "The three elements",
+        "Initial value f(0+), final value f(∞), and time constant τ. “Elements” here means three quantities, not three physical components."
+      ],
+      [
+        "What the exponential does",
+        "The final value is the destination. The exponential multiplies the remaining difference from that destination."
+      ]
+    ],
+    "rules": [
+      [
+        "f(t) = f(∞) + [f(0+) − f(∞)]e^(−t/τ)",
+        "Stable linear first-order circuit; fixed post-switch connections and constant sources, t ≥ 0. Restart the analysis for another switching interval."
+      ],
+      [
+        "τRC = Rseen C; τRL = L/Rseen",
+        "Look into the storage element’s terminals in the post-switch circuit. Suppress independent voltage sources to shorts and independent current sources to opens. Keep resistances; dependent sources, if present, remain active."
+      ],
+      [
+        "Initial → old circuit; final and τ → new circuit",
+        "For initial state use continuity. For final DC values open C and short L with sources active. Suppress sources only when finding Rseen."
+      ],
+      [
+        "At t = τ: 36.8% of the initial-to-final difference remains",
+        "63.2% of the change is completed. Your slides use 3τ as about settled (5% remains); 5τ leaves 0.67%. Neither is an exact end."
+      ],
+      [
+        "RC duC/dt + uC = Us; L diL/dt + RiL = Us",
+        "KVL plus the element law explains the exponential for simple series RC and RL circuits."
+      ]
+    ],
+    "symbols": [
+      [
+        "f(t); f(0+); f(∞)",
+        "The chosen voltage (V) or current (A), its starting value, and its final value. ∞ means the long-time limit."
+      ],
+      [
+        "τ (tau); t",
+        "Time constant and elapsed time, both seconds (s)."
+      ],
+      [
+        "Rseen",
+        "Equivalent resistance seen by C or L after switching, in ohms (Ω). “seen” names the viewpoint."
+      ],
+      [
+        "C; L; Us",
+        "Capacitance (F), inductance (H), constant source voltage (V); s labels the source."
+      ],
+      [
+        "e; RC; RL",
+        "e ≈ 2.718, the exponential base. RC = resistor–capacitor; RL = resistor–inductor."
+      ],
+      [
+        "kΩ × µF = ms",
+        "Convert units carefully: 1 F = 10⁶ µF = 10¹² pF."
+      ],
+      [
+        "R; uC; iL",
+        "Series resistance (Ω), capacitor voltage (V), inductor current (A)."
+      ]
+    ],
+    "examples": [
+      "Initial-value E4: uC(0+) = 3 V; iL(0+) = 1.5 mA. The bypassed feed makes the new node 6 V: iC(0+) = (6−3)/1k = 3 mA; source current = 4.5 mA; uL(0+) = 6−(1.5 mA×2k) = 3 V.",
+      "Other initial-value examples: the settled 6 V/2 kΩ inductor retains 3 mA; the initially empty 10 V LC network has iL(0+) = 0 and iC(0+) = 0; the 1 A-source example retains iL = 1 A, so the newly connected resistor initially carries 0 A.",
+      "Teacher 20 V/1 kΩ/1 H example: initially empty L has iL(0+) = 0 and uL(0+) = 20 V. After a long time iL = 20 mA. Rerouting that current through a 500 kΩ meter gives a 10 kV magnitude; with the marked downward voltage reference, the reading is −10 kV.",
+      "Final-value examples: the 4 mA source splits into equal branches, giving iL(∞) = 2 mA. The capacitor divider gives uC(∞) = 10×3/(4||4+3) = 6 V, with resistor values in kΩ.",
+      "Time constants: L = 1 H sees 3+3 = 6 Ω, so τ = 1/6 s. The capacitor sees 6k||6k||3k = 1.5 kΩ, so τ = 1500 C seconds. The slide’s “1.5 Ω” label misses k.",
+      "Bridge review: 18 V dividers 3k/6k and 6k/3k give midpoint voltages 12 V and 6 V. Thus uC(∞) = 6 V, left positive; Rseen = (3k||6k)+(6k||3k) = 4 kΩ; τ = 4000 C seconds."
+    ],
+    "traps": [
+      "Check t = 0 and t → ∞ in your equation: they must reproduce the two values you found.",
+      "Two independent storage states generally cannot be represented by one exponential.",
+      "For positive Rseen, increasing R slows RC but speeds RL; use the correct time-constant formula.",
+      "The 10 kV meter result is an ideal model calculation; the practical transient applications in the slides include ignition, flash lamps, spot welding and wire-explosion spraying."
+    ]
+  },
+  "rc-response": {
+    "title": "RC charging, discharging and complete response",
+    "definitions": [
+      [
+        "Zero-state",
+        "No initial stored energy; an applied source builds the response."
+      ],
+      [
+        "Zero-input",
+        "No applied source after switching; initial stored energy drives the response."
+      ],
+      [
+        "Complete response",
+        "Initial stored energy and the post-switch source both contribute."
+      ]
+    ],
+    "rules": [
+      [
+        "τ = Rseen C; uC(t) = Uf + (U0 − Uf)e^(−t/τ)",
+        "General first-order RC voltage under constant post-switch excitation. For a simple source–R–C loop, Rseen = R and Uf = Us."
+      ],
+      [
+        "Uncharged → Us: uC = Us(1 − e^(−t/RC)); iC = (Us/R)e^(−t/RC)",
+        "Simple series RC charge: uC starts at 0; iC starts at Us/R and tends to 0."
+      ],
+      [
+        "Discharge through R: uC = U0e^(−t/RC); iC = −(U0/R)e^(−t/RC)",
+        "Current reference enters C’s positive terminal. Negative means the actual discharge current leaves that terminal."
+      ],
+      [
+        "Us1 → Us2: uC = Us2 + (Us1 − Us2)e^(−t/RC)",
+        "Initially settled at Us1, then connected through R to Us2. iC = [(Us2−Us1)/R]e^(−t/RC)."
+      ],
+      [
+        "t = −τ ln[(Utarget − Uf)/(U0 − Uf)]",
+        "Target lies strictly between unequal initial and final values. The logarithm’s ratio must be between 0 and 1."
+      ]
+    ],
+    "symbols": [
+      [
+        "uC; iC",
+        "Capacitor voltage in volts; capacitor current in amperes. C labels the capacitor."
+      ],
+      [
+        "Us; Us1; Us2",
+        "Source voltage, old source voltage and new source voltage (V)."
+      ],
+      [
+        "U0; Uf; Utarget",
+        "Initial, final and requested capacitor voltages (V); f means final."
+      ],
+      [
+        "R; Rseen; C; τ",
+        "Resistance and equivalent seen resistance (Ω), capacitance (F), time constant (s)."
+      ],
+      [
+        "ln; e",
+        "Natural logarithm and its base e ≈ 2.718."
+      ]
+    ],
+    "examples": [
+      "Video calculation: R = 1 kΩ, C = 500 µF, Us = 20 V → τ = 0.5 s. To reach 18 V: t = −0.5 ln(0.1) ≈ 1.151 s, or 2.303τ.",
+      "Complete-response illustration of the teacher’s formula: U0 = 10 V, Uf = 4 V → uC(t) = 4+6e^(−t/τ). With current into C’s positive terminal, iC is negative as the voltage falls.",
+      "Teacher complete-response table has reused zero-state entries. Use uC(0+) = Us1 and iC(0+) = (Us2−Us1)/R, consistent with its main equation."
+    ],
+    "traps": [
+      "The charging formula that starts at zero is not valid for every initially charged capacitor.",
+      "For a general network, the final voltage is its DC port voltage, not automatically the supply voltage.",
+      "An exponential approaches its endpoint asymptotically; “fully charged after 5τ” is an approximation."
+    ]
+  },
+  "rl-response": {
+    "title": "RL response and the teacher’s decay example",
+    "definitions": [
+      [
+        "What continues",
+        "Inductor current cannot jump at ordinary finite switching. Its voltage can change immediately to maintain that initial current."
+      ],
+      [
+        "Discharge path",
+        "After switching, trace the actual closed path available to the stored inductor current. The old supply resistance is not automatically the new Rseen."
+      ]
+    ],
+    "rules": [
+      [
+        "iL(t) = If + (I0 − If)e^(−t/τ); τ = L/Rseen",
+        "Stable linear first-order RL circuit with constant post-switch excitation."
+      ],
+      [
+        "Zero-state buildup: iL = (Us/R)(1−e^(−tR/L))",
+        "Initially empty series RL connected to Us through R."
+      ],
+      [
+        "Source-free decay: iL = I0e^(−t/τ); uL = −Rseen I0e^(−t/τ)",
+        "A resistive decay path remains. For passive references uL = L diL/dt: falling positive current gives negative uL."
+      ],
+      [
+        "WL = ½LiL²; pL = uL iL",
+        "During decay, pL is negative under passive references: stored magnetic energy returns to the resistors."
+      ]
+    ],
+    "symbols": [
+      [
+        "I0; If; iL",
+        "Initial, final and instantaneous inductor currents (A); L labels the inductor."
+      ],
+      [
+        "uL; eL",
+        "Passive terminal voltage; induced source EMF, both volts. Their references are opposite: uL = −eL."
+      ],
+      [
+        "L; Rseen; τ",
+        "Inductance (H), resistance seen after switching (Ω), time constant (s)."
+      ],
+      [
+        "WL; pL",
+        "Stored magnetic energy (J); instantaneous absorbed inductor power (W)."
+      ],
+      [
+        "Us; R; RL",
+        "Constant source voltage (V), series resistance (Ω); RL means resistor–inductor."
+      ]
+    ],
+    "examples": [
+      "Teacher initial circuit: 3 A divides between a 2 Ω branch and a (1 Ω + ideal shorted L) branch. iL(0−) = 3×2/(2+1) = 2 A. The feed resistor does not change that current division.",
+      "After the switch moves, Rseen = 1+(2||2) = 2 Ω. L = 1 H → τ = 1/2 = 0.5 s; If = 0.",
+      "Substitute the three values: iL(t) = 2e^(−2t) A. Differentiate: uL(t) = −4e^(−2t) V with the marked downward passive voltage reference.",
+      "At t = 0+: iL = 2 A and uL = −4 V. At 0.5 s: iL ≈ 0.736 A and uL ≈ −1.472 V. Both tend to zero. The current direction stays the same while energy is released."
+    ],
+    "traps": [
+      "An ideal inductor is a DC steady-state short, not a short throughout the transient.",
+      "Do not set current to zero just because the original source was disconnected.",
+      "An open inductor with no modeled discharge path cannot be treated as an ordinary finite-resistance exponential."
+    ]
+  },
+  "ac-waveforms": {
+    "title": "Sinusoidal AC: size, speed and phase",
+    "definitions": [
+      [
+        "AC / DC",
+        "Alternating current reverses direction; alternating voltage reverses polarity. DC means direct current. A positive-only pulse train is unidirectional pulsating DC in this course."
+      ],
+      [
+        "Peak / RMS",
+        "Peak is the largest magnitude. RMS means root mean square: the equivalent resistor-heating value. It is not the signed average."
+      ],
+      [
+        "Phase",
+        "The angle in the sine function. Initial phase is that angle at t = 0; larger phase leads for same-frequency signals using one sine/cosine convention."
+      ]
+    ],
+    "rules": [
+      [
+        "i(t) = Im sin(ωt + ψ); T = 1/f; ω = 2πf",
+        "Use consistent angle units. Frequency f is cycles per second; ω is radians per second."
+      ],
+      [
+        "I = Im/√2; U = Um/√2; E = Em/√2",
+        "Pure sinusoids only. The course uses uppercase I, U, E for RMS; lowercase i, u, e for instantaneous values."
+      ],
+      [
+        "φ = ψu − ψi",
+        "Same-frequency signals expressed with the same reference: positive φ → voltage leads/current lags; negative φ → voltage lags/current leads."
+      ],
+      [
+        "Resistor average power: P = U²/R = I²R",
+        "Use RMS voltage/current. A sine’s full-cycle signed average is zero, but its heating is not."
+      ]
+    ],
+    "symbols": [
+      [
+        "Im; Um; Em",
+        "Peak current (A), voltage and source EMF (V); m means maximum."
+      ],
+      [
+        "I; U; E",
+        "RMS current (A), voltage and source EMF (V). RMS = root mean square."
+      ],
+      [
+        "f; T; ω",
+        "Frequency (Hz), period (s), angular frequency (rad/s)."
+      ],
+      [
+        "ψ; ψu; ψi; φ",
+        "Initial phase, voltage/current initial phases, voltage-minus-current phase difference; degrees or radians consistently."
+      ],
+      [
+        "P; R",
+        "Average resistor power (W); resistance (Ω)."
+      ]
+    ],
+    "examples": [
+      "Teacher: f = 2 Hz → T = 0.5 s and ω = 4π rad/s.",
+      "i = 10 sin(1000t+30°) A: Im = 10 A, I ≈ 7.07 A, initial phase +30°. Convert the degree offset to radians when evaluating alongside ωt.",
+      "Teacher: u = 311 sin(314t−60°) V and i = 100 sin(314t+30°) A → φ = −90°: current leads voltage by 90°.",
+      "Constant-resistance 300 V-rated heater at 220 V RMS: power ratio = (220/300)² ≈ 0.538. The 220 V and 380 V supply ratings in the slides are RMS.",
+      "The rotating-coil alternator reverses induced polarity as it rotates. The slides ask about 50/60 Hz, ballast frequency and high-frequency advantages, but supply no specific ballast frequency answer."
+    ],
+    "traps": [
+      "A changing magnitude alone does not establish AC in the course’s classification.",
+      "60 Hz means 60 complete cycles per second, with two direction reversals per cycle.",
+      "The video’s P = UI and peak-power shortcut apply to its in-phase sinusoidal examples, not every AC load."
+    ]
+  },
+  "phasors": {
+    "title": "Phasors and complex arithmetic",
+    "definitions": [
+      [
+        "Phasor",
+        "A complex number recording a sinusoid’s magnitude and initial phase. Frequency is shared problem information, not supplied by the phasor alone."
+      ],
+      [
+        "Rotating vector",
+        "An anticlockwise rotating vector’s vertical projection gives a sine wave. Relative angles stay fixed for signals of the same frequency."
+      ]
+    ],
+    "rules": [
+      [
+        "a+jb = M(cosψ+j sinψ) = Me^(jψ) = M∠ψ",
+        "Rectangular, trigonometric, exponential and polar forms of the same number. j² = −1."
+      ],
+      [
+        "M = √(a²+b²); ψ = atan2(b,a); a = M cosψ; b = M sinψ",
+        "Keep the correct quadrant; ordinary arctan(b/a) alone can give the wrong direction."
+      ],
+      [
+        "Add/subtract in rectangular form; multiply/divide in polar form",
+        "Add corresponding components. For multiplication multiply magnitudes/add angles; for division divide magnitudes/subtract angles."
+      ],
+      [
+        "i(t) = √2 I sin(ωt+ψ) ↔ Ĩ = I∠ψ",
+        "Course sine reference and RMS phasor. A peak phasor uses Im = √2 I instead."
+      ],
+      [
+        "×j → +90° rotation; ×(−j) → −90° rotation",
+        "Neither rotation changes magnitude."
+      ]
+    ],
+    "symbols": [
+      [
+        "j; a; b; M",
+        "Imaginary unit, real component, imaginary component and nonnegative magnitude. Components have the same units as the phasor."
+      ],
+      [
+        "∠; ψ",
+        "Polar-angle notation and initial phase."
+      ],
+      [
+        "Ĩ; Ũ",
+        "Current phasor (A); voltage phasor (V). The accent distinguishes a phasor from a scalar RMS magnitude."
+      ],
+      [
+        "I; ω; t",
+        "RMS current (A), shared angular frequency (rad/s), time (s)."
+      ]
+    ],
+    "examples": [
+      "1+j = √2∠45°; j = 1∠90°. (1+j)+(5+j6) = 6+j7.",
+      "(1+j)/(√3/2+j/2) = √2∠15°. Multiplying that result by (1/2+j√3/2) gives √2∠75°.",
+      "Teacher: i1 = 12.7√2 sin(314t+30°), i2 = 11√2 sin(314t−60°). RMS sum ≈ (11.00+j6.35)+(5.50−j9.526) = 16.499−j3.176 = 16.8∠−10.9° A.",
+      "Therefore i(t) ≈ 16.8√2 sin(314t−10.9°) A. The RMS result is 16.8 A; do not add 12.7+11 as magnitudes.",
+      "Ĩ = 20∠30° A needs a separately given ω to become a waveform: i(t)=20√2 sin(ωt+30°) A. It does not itself imply ω = 1000 rad/s."
+    ],
+    "traps": [
+      "Do not add phase angles when adding phasors.",
+      "Do not mix peak and RMS phasors in the same calculation.",
+      "Do not add different-frequency signals as one fixed-frequency phasor."
+    ]
+  },
+  "impedance": {
+    "title": "Pure resistance, inductance and capacitance",
+    "definitions": [
+      [
+        "Impedance Z",
+        "Complex ratio of voltage phasor to current phasor. Magnitude sets the voltage/current size ratio; angle sets their phase difference."
+      ],
+      [
+        "Reactance XL / XC",
+        "Here both are positive magnitudes. Their impedance signs differ: +j for an inductor; −j for a capacitor."
+      ]
+    ],
+    "rules": [
+      [
+        "ZR = R; Ũ = RĨ; U = RI",
+        "Ideal resistor with passive references: voltage and current in phase."
+      ],
+      [
+        "XL = ωL = 2πfL; ZL = jXL; Ũ = jXLĨ",
+        "Ideal inductor: voltage leads current by 90°. Magnitudes obey U = XL I. XL increases with frequency."
+      ],
+      [
+        "XC = 1/(ωC); ZC = −jXC = 1/(jωC); Ũ = −jXCĨ",
+        "Ideal capacitor: current leads voltage by 90°. Magnitudes obey U = XC I. XC decreases with frequency."
+      ],
+      [
+        "iL = Im sinωt → uL = ωLIm cosωt",
+        "A derivative of sine is cosine: the inductor voltage is 90° ahead. Similarly uC = Um sinωt gives iC = ωCUm cosωt."
+      ]
+    ],
+    "symbols": [
+      [
+        "R; XL; XC; Z",
+        "Resistance, inductive/capacitive reactance magnitudes, complex impedance, all ohms (Ω)."
+      ],
+      [
+        "L; C; f; ω",
+        "Inductance (H), capacitance (F), frequency (Hz), angular frequency (rad/s)."
+      ],
+      [
+        "U; I; Ũ; Ĩ",
+        "RMS voltage/current magnitudes and their corresponding phasors, V/A."
+      ],
+      [
+        "Subscripts R / L / C",
+        "Identify the resistor / inductor / capacitor. j means a +90° rotation."
+      ],
+      [
+        "Im; Um; t",
+        "Peak current (A), peak voltage (V), time (s); m means maximum."
+      ]
+    ],
+    "examples": [
+      "If I = 2 A and R = 5 Ω, U = 10 V in phase. If XL = 5 Ω, U = 10 V with voltage 90° ahead. If XC = 5 Ω, U = 10 V with voltage 90° behind current.",
+      "Teacher capacitor slide: the repeated phrase “voltage leads” and symbol XL are typos there. Use current leading voltage and Ũ = −jXCĨ."
+    ],
+    "traps": [
+      "Do not treat a reactance magnitude as a real resistance: you would lose the phase.",
+      "The simple laws describe ideal elements in sinusoidal steady state, with consistent reference polarities."
+    ]
+  },
+  "series-rlc": {
+    "title": "Series RLC and series impedances",
+    "definitions": [
+      [
+        "Series connection",
+        "All elements carry the same current. Voltage phasors add by KVL; their magnitudes usually do not."
+      ],
+      [
+        "Impedance triangle",
+        "Horizontal side R, signed vertical side X, hypotenuse |Z|. Its angle φ is voltage phase minus current phase."
+      ]
+    ],
+    "rules": [
+      [
+        "Z = R+j(XL−XC) = R+jX; Ũ = ZĨ",
+        "Same-frequency sinusoidal steady state, with passive element references."
+      ],
+      [
+        "|Z| = √(R²+X²); φ = atan2(X,R); Ĩ = Ũ/Z",
+        "Scalar RMS magnitudes obey U = |Z|I. For positive R, arctan(X/R) gives the same principal angle."
+      ],
+      [
+        "X > 0 → inductive; X < 0 → capacitive; X = 0 → resistive at the terminals",
+        "Current lags voltage / leads voltage / is in phase, respectively."
+      ],
+      [
+        "Ztotal = Z1+Z2; Ũ1 = [Z1/(Z1+Z2)]Ũ; Ũ2 = [Z2/(Z1+Z2)]Ũ",
+        "Complex series voltage divider; use the full impedances, not their magnitudes."
+      ],
+      [
+        "Special cases: R; jXL; −jXC; R+jXL; R−jXC; j(XL−XC)",
+        "R, L, C, RL, RC and LC, respectively. Omit the absent elements."
+      ]
+    ],
+    "symbols": [
+      [
+        "Z; |Z|; R; X",
+        "Complex impedance, its magnitude, resistance and signed net reactance (Ω)."
+      ],
+      [
+        "XL; XC; φ",
+        "Positive inductive/capacitive reactance magnitudes (Ω); impedance/voltage-minus-current angle."
+      ],
+      [
+        "Ũ; Ĩ; Ũ1; Ũ2",
+        "Supply voltage phasor (V), common current phasor (A), section voltage phasors (V)."
+      ],
+      [
+        "Z1; Z2; total",
+        "Section impedances (Ω); “total” means the complete series combination."
+      ],
+      [
+        "U; I; RLC",
+        "RMS voltage (V) and current (A); RLC means resistor–inductor–capacitor."
+      ]
+    ],
+    "examples": [
+      "Teacher opening question: UR = UL = UC = 1 V. With current at 0°, Ũ = 1+j−j = 1 V, not 3 V.",
+      "Teacher: Z = 300+j500 Ω → R=300 Ω, X=500 Ω. Ũ=50∠30° V and Ĩ=2∠30° A → Z=25 Ω. Ũ=100∠−30° V and Ĩ=4∠40° A → Z=25∠−70° ≈ 8.55−j23.49 Ω.",
+      "Teacher divider: Ũs=10∠0° V, Z1=3+j2 Ω and Z2=2+j3 Ω. Ztotal=5+j5 Ω, Ĩ=1−j1 A. Ũ1=5−j1 V and Ũ2=5+j1 V; their sum is 10 V."
+    ],
+    "traps": [
+      "U = ZI is not a scalar-magnitude formula when Z is complex; write U = |Z|I.",
+      "Large individual inductor/capacitor voltages can cancel in the phasor sum.",
+      "The video’s resonance frequency formula is optional enrichment here; learn the teacher’s requested impedance and divider calculations first."
+    ]
+  },
+  "parallel-rlc": {
+    "title": "Parallel RLC and parallel impedances",
+    "definitions": [
+      [
+        "Parallel connection",
+        "All branches share the same voltage. KCL adds their current phasors."
+      ],
+      [
+        "Cancellation",
+        "Inductor and capacitor currents can cancel at the supply while each branch still carries current and exchanges stored energy."
+      ]
+    ],
+    "rules": [
+      [
+        "Ĩ = ĨR+ĨL+ĨC; with Ũ at 0°: Ĩ = U/R − jU/XL + jU/XC",
+        "Pure R/L/C branches: resistor current is in phase, inductor current at −90°, capacitor current at +90°."
+      ],
+      [
+        "1/Zeq = 1/Z1 + 1/Z2; Zeq = Z1Z2/(Z1+Z2)",
+        "Two parallel complex impedances, when the denominators are defined."
+      ],
+      [
+        "Ĩ1 = [Z2/(Z1+Z2)]Ĩ; Ĩ2 = [Z1/(Z1+Z2)]Ĩ",
+        "Current divider: use the opposite branch’s impedance in the numerator."
+      ],
+      [
+        "Ĩk = Ũ/Zk; Ĩ = ΣĨk",
+        "Alternative method: solve each branch then add in rectangular form."
+      ]
+    ],
+    "symbols": [
+      [
+        "Ĩ; ĨR; ĨL; ĨC",
+        "Total, resistor, inductor and capacitor current phasors (A)."
+      ],
+      [
+        "Ũ; Z1; Z2; Zeq",
+        "Common voltage phasor (V), branch and equivalent impedances (Ω); eq = equivalent."
+      ],
+      [
+        "XL; XC; R",
+        "Reactance magnitudes and resistance (Ω)."
+      ],
+      [
+        "k; Σ",
+        "Branch label; sum of all branch contributions."
+      ],
+      [
+        "Ĩ1; Ĩ2; s; RLC",
+        "Current phasors in branches 1 and 2 (A); s labels the supply; RLC means resistor–inductor–capacitor."
+      ]
+    ],
+    "examples": [
+      "Teacher’s equal 5 A cases: R+L+C → 5−j5+j5 = 5 A. L+C alone → −j5+j5 = 0 A at the supply. R+C → 5+j5 = 5√2∠45° A.",
+      "Teacher E1: Ĩs=5∠0° A, Z1=2+j2 Ω, Z2=3+j3 Ω → Ĩ1=3 A, Ĩ2=2 A, Zeq=1.2+j1.2 Ω and Ũ=6+j6 V.",
+      "Teacher E2: Ũ=220∠0° V, Z1=20−j114 Ω, Z2=40+j157 Ω. Ĩ1≈0.32846+j1.87220 A; Ĩ2≈0.33525−j1.31586 A. Total ≈0.66371+j0.55634 = 0.8660∠39.97° A.",
+      "Check E2 independently: Zeq≈194.682−j163.188 Ω. 220/Zeq gives the same total current. The slides’ 0.862∠39.6° result uses earlier rounding."
+    ],
+    "traps": [
+      "Do not add current magnitudes. Add real and imaginary components.",
+      "Use full complex Z values in the divider.",
+      "Zero total reactive supply current does not imply zero current in the reactive branches."
+    ]
+  },
+  "average-power": {
+    "title": "Instantaneous and average power",
+    "definitions": [
+      [
+        "Instantaneous absorbed power",
+        "p(t) = u(t)i(t), with current entering the marked + terminal. Positive means energy enters the element; negative means it returns energy."
+      ],
+      [
+        "Active / real / average power P",
+        "The mean of p(t) over a complete cycle, measured in watts. Ideal L and C return their stored energy over a full cycle, so their average real power is zero."
+      ]
+    ],
+    "rules": [
+      [
+        "P = (1/T)∫₀ᵀp(t)dt = UI cosφ",
+        "Sinusoidal steady state; U and I are RMS magnitudes; φ = ψu−ψi."
+      ],
+      [
+        "Pure R: p(t) = UI[1−cos(2ωt)]; P = UI = I²R = U²/R",
+        "Using in-phase sine waveforms. p never becomes negative; it varies at twice the electrical frequency."
+      ],
+      [
+        "Pure L: P = 0; pure C: P = 0",
+        "Their instantaneous absorbed power alternates between positive storage and negative return. Zero average does not mean zero instantaneous power."
+      ]
+    ],
+    "symbols": [
+      [
+        "p; P",
+        "Instantaneous and cycle-average absorbed power (W)."
+      ],
+      [
+        "u(t); i(t); U; I",
+        "Instantaneous voltage/current and RMS magnitudes (V/A)."
+      ],
+      [
+        "T; t; ω",
+        "Period and time (s); angular frequency (rad/s)."
+      ],
+      [
+        "φ; ψu; ψi",
+        "Voltage-minus-current phase difference; individual initial phases."
+      ],
+      [
+        "R; ∫₀ᵀ",
+        "Resistance (Ω); integrate over one full period to obtain energy, then divide by T for average power."
+      ]
+    ],
+    "examples": [
+      "Teacher correction: the resistor’s identity is 1−cos(2ωt), not 1−cos²(ωt). The pure-inductor slide repeats resistor formulas by mistake; its correct average real power is zero.",
+      "For L with i=√2 I sinωt, u=√2 U cosωt, so p=UI sin(2ωt). For C with u=√2 U sinωt, i=√2 I cosωt, the displayed p has the same algebraic form because the chosen time reference differs.",
+      "If U=100 V, I=5 A and current lags voltage by 60°, P=100×5×cos60°=250 W. The product UI is 500 VA, not 500 W."
+    ],
+    "traps": [
+      "Use RMS values in P=UI cosφ; peak magnitudes need a factor of ½.",
+      "Compare instantaneous-power plots using the same voltage/current phase reference.",
+      "An ideal capacitor or inductor can have zero average real power while exchanging substantial energy."
+    ]
+  },
+  "power-triangle": {
+    "title": "Reactive power, apparent power and power factor",
+    "definitions": [
+      [
+        "Reactive power Q",
+        "Signed measure of sinusoidal energy exchange: positive for passive inductive loads, negative for passive capacitive loads. Units: var."
+      ],
+      [
+        "Apparent power S",
+        "RMS voltage × RMS current, in volt-amperes (VA). It combines real power and reactive exchange; it is not their arithmetic sum."
+      ],
+      [
+        "Power factor PF",
+        "P/S = cosφ for sinusoidal voltage/current. State leading or lagging as well as the number. It is not an energy-efficiency percentage."
+      ]
+    ],
+    "rules": [
+      [
+        "P = UI cosφ; Q = UI sinφ; S = UI = √(P²+Q²)",
+        "Sinusoidal steady state; consistent passive references and RMS magnitudes."
+      ],
+      [
+        "Pure R: Q=0; pure L: Q=+UI; pure C: Q=−UI",
+        "For L, Q=I²XL=U²/XL. For C, |Q|=I²XC=U²/XC; retain the negative sign when adding."
+      ],
+      [
+        "Ptotal = ΣPk; Qtotal = ΣQk; Stotal = √(Ptotal²+Qtotal²)",
+        "Add signed real/reactive powers first. Apparent-power magnitudes generally do not add."
+      ],
+      [
+        "PF = P/S; tanφ = Q/P",
+        "Power triangle: P horizontal, signed Q vertical, S hypotenuse. Use ratios only when their denominators are nonzero."
+      ],
+      [
+        "With voltage at 0°: Ĩ = I cosφ − jI sinφ",
+        "In-phase current component IP=I cosφ gives P=U IP. Inductive current has a negative imaginary component."
+      ]
+    ],
+    "symbols": [
+      [
+        "P; Q; S",
+        "Active power (W/kW), signed reactive power (var/kvar), apparent power (VA/kVA)."
+      ],
+      [
+        "PF; φ",
+        "Power factor (no unit); voltage phase minus current phase. Positive φ is lagging current; negative φ is leading current."
+      ],
+      [
+        "IP; I; U",
+        "Active current component and RMS total current (A); RMS voltage (V)."
+      ],
+      [
+        "XL; XC; Σ; k",
+        "Positive reactance magnitudes (Ω); sum; branch/component label."
+      ]
+    ],
+    "examples": [
+      "Worked illustration of the course addition rule: 300 W resistor plus +400 var inductor → S=√(300²+400²)=500 VA, PF=0.6 lagging. Apparent power is not 700 VA.",
+      "Add a capacitor with Q=−400 var: net Q=0, P remains 300 W and S becomes 300 VA in the ideal model.",
+      "Teacher’s capacitor Q is printed as a positive magnitude. Use negative capacitor Q when combining it with inductive Q."
+    ],
+    "traps": [
+      "Reactive power is not the heat loss I²R. Ideal reactive elements exchange energy rather than dissipating average real power.",
+      "A cosine alone cannot distinguish leading from lagging.",
+      "The reviewed slides do not teach a separate capacitor-sizing procedure; do not treat it as required here."
+    ]
+  }
+}

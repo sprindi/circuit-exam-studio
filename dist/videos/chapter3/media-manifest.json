@@ -1,0 +1,103 @@
+{
+  "videos": [
+    {
+      "id": "ac-waveforms",
+      "title": "Alternating Current vs Direct Current - Rms Voltage, Peak Current & Average Power of AC Circuits",
+      "creator": "The Organic Chemistry Tutor",
+      "source": "https://www.youtube.com/watch?v=ERIToctYUcQ",
+      "file": "videos/chapter3/ac-waveforms.mp4",
+      "poster": "videos/chapter3/ac-waveforms.jpg",
+      "duration_seconds": 689.771973,
+      "bytes": 19042824,
+      "width": 1280,
+      "height": 720,
+      "video_codec": "h264",
+      "sha256": "07035cd6b188b4b24869bb1ade6e3a07d4fed87196787d0a6769aa4506d37c00"
+    },
+    {
+      "id": "phasors",
+      "title": "Phasor and The Phasor Diagram in AC Circuits Explained",
+      "creator": "ALL ABOUT ELECTRONICS",
+      "source": "https://www.youtube.com/watch?v=zlmwmvijn1Y",
+      "file": "videos/chapter3/phasors.mp4",
+      "poster": "videos/chapter3/phasors.jpg",
+      "duration_seconds": 808.333061,
+      "bytes": 19003720,
+      "width": 1280,
+      "height": 720,
+      "video_codec": "h264",
+      "sha256": "74afe67cdfde8c88d445c3f5022d9a7e551e9b9bc4167521a3966bb3cac3b481"
+    },
+    {
+      "id": "impedance",
+      "title": "Impedance",
+      "creator": "Khan Academy",
+      "source": "https://www.youtube.com/watch?v=WmTlioVfS78",
+      "file": "videos/chapter3/impedance.mp4",
+      "poster": "videos/chapter3/impedance.jpg",
+      "duration_seconds": 700.313832,
+      "bytes": 15991166,
+      "width": 1280,
+      "height": 720,
+      "video_codec": "h264",
+      "sha256": "ed496098ec119119ca72d9d21dafc644b791822b8a2c8aba3552d62c895d99e2"
+    },
+    {
+      "id": "series-rlc",
+      "title": "Series RLC Circuits, Resonant Frequency, Inductive Reactance & Capacitive Reactance - AC Circuits",
+      "creator": "The Organic Chemistry Tutor",
+      "source": "https://www.youtube.com/watch?v=2GvqQvohP2k",
+      "file": "videos/chapter3/series-rlc.mp4",
+      "poster": "videos/chapter3/series-rlc.jpg",
+      "duration_seconds": 644.353741,
+      "bytes": 17638474,
+      "width": 1280,
+      "height": 720,
+      "video_codec": "h264",
+      "sha256": "914229e08a40f4e5ddffbc5064568c9669c4197f9b4d2b1b1b6d6c215b206656"
+    },
+    {
+      "id": "parallel-rlc",
+      "title": "Parallel RLC Circuit Example Problem",
+      "creator": "The Organic Chemistry Tutor",
+      "source": "https://www.youtube.com/watch?v=8MMzeeHNjIw",
+      "file": "videos/chapter3/parallel-rlc.mp4",
+      "poster": "videos/chapter3/parallel-rlc.jpg",
+      "duration_seconds": 637.689615,
+      "bytes": 16572993,
+      "width": 1280,
+      "height": 720,
+      "video_codec": "h264",
+      "sha256": "36de85d1bf5b62cb36bcd827dbd7650fed5e35172ee92a08802f9222f6bdb712"
+    },
+    {
+      "id": "average-power",
+      "title": "Average Power in AC Circuits",
+      "creator": "Neso Academy",
+      "source": "https://www.youtube.com/watch?v=vwtzsdve0XI",
+      "file": "videos/chapter3/average-power.mp4",
+      "poster": "videos/chapter3/average-power.jpg",
+      "duration_seconds": 660.816689,
+      "bytes": 23910710,
+      "width": 1280,
+      "height": 720,
+      "video_codec": "h264",
+      "sha256": "3689eac1fe7c416221b4364e0a5d9ae077d9e2400639d0a5e0d85c7cf8ae8efc"
+    },
+    {
+      "id": "power-triangle",
+      "title": "Apparent Power & Power Factor",
+      "creator": "Neso Academy",
+      "source": "https://www.youtube.com/watch?v=_ebsZf9RpT8",
+      "file": "videos/chapter3/power-triangle.mp4",
+      "poster": "videos/chapter3/power-triangle.jpg",
+      "duration_seconds": 417.123265,
+      "bytes": 10934361,
+      "width": 1280,
+      "height": 720,
+      "video_codec": "h264",
+      "sha256": "920ae4e6cfe5340be47c292f819a63dcf507e735a6278a94096f0734ce54c0f8"
+    }
+  ],
+  "total_bytes": 123094248
+}
