@@ -14,6 +14,10 @@ Then open http://127.0.0.1:8765/ . On Windows, use `py` instead of `python3`.
 
 ## Files and deployment
 
+Live website: **https://sprindi.github.io/circuit-exam-studio/**
+
+GitHub Pages publishes `dist/` at that address through `.github/workflows/pages.yml`. Changes to `dist/` pushed to `main` deploy automatically; the workflow can also be run manually from Actions.
+
 `dist/` contains the complete website: editable HTML, CSS, JavaScript, and study content. No dependency installation or build is required. Serve `dist/` with any static website host.
 
 For Vercel, import this repository, choose Other as the framework, leave the build command empty, and set the output directory to `dist`.
